@@ -1,0 +1,11 @@
+Légende carte:
+
+  - Des dynamismes différents
+
+    Vert - Villes qui perdent des habitants
+    Jaune - Villes peu dynamiques (0 à 0.3% par an)
+    Orange - Villes assez dynamiques (+0.3% à +1% par an)
+    Rouge - Villes très dynamiques (> 1% par an)
+
+  [pointillés rouges] "Sun Belt" française
+  |--> à compléter
