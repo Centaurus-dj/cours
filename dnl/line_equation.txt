@@ -1,0 +1,33 @@
+u = vector
+
+explicit equation y = mx + p    = u(1;m)
+general equation: y = ax+by+c=0 = u(-b;a)
+
+p = y{a} - mx{a}
+m = (y{b}-y{a})/(x{b}- x{a}) = slope
+
+A (x{a}; y{a})
+B (x{b}; y{b})
+
+a vertical line --> x = a
+an horizontal line --> y = a
+This is a sort of equation but m is equal to 0.
+line equation for what?
+  - To calculate coordinates of some points on the line
+  - to draw the line
+
+
+Exercices:
+
+  1) m=2 A(3;1)
+    a)
+      y = 2x+p <=> p=y-2x       }
+           <=> p=1-2*3= -5  } y = 2x-5
+    b) u(1;2), v(2;4), w(10;20) --> these vectors are colinear
+
+  2) u(1;3) A(-2;4)
+
+    M e d <=> AM, u collinear
+    det(AM, u) = 0
+    A*(y-4) - 3(x+2)=0
+    -3x+y-10=0
