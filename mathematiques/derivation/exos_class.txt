@@ -62,6 +62,71 @@ ex84 p126:
 
 
 
+Ex 48 p.?:
+
+  f'(x) = -4x(x²+1)-2x*(-4x) / (x²+1)²
+        = -4x²-4+8x² / (x²+1)²
+        = 4x²-4 /(x²+1)²
+
+  signe de 4x²-4:
+
+    delta = 0²-4*4*(-4) = 64
+    2 solutions pour 4x²-4=0
+    x{1} = -0+sqrt(64) / 2*4 = 1
+    x{2} = -0-sqrt(64) / 2*4 = -1
+
+
+  x;  -infini; -1; 1; +infini
+  signe de 4x²-4;   +; 0; -; 0; +
+  signe de (x2+1)²; +; 0; +; 0; +
+  signe de f';      +; 0; -; 0; +
+  variations de f;  /; 2; \; -2; /
+
+  f(-1) = -4*(-1) / (-1)²+1 = 4/2 = 2
+  f(1) = -4*1 / 1²+1 = -4/2 = -2
+
+
+
+
+
+Feuille d'exercices:
+
+  Ex 1:
+
+    f est croissante sur ]-inf; -0.5] puis décroissante sur [-0.5; 2.5] puis croissante sur [2.5; +inf[.
+    Donc f' est positive sur ]-inf; -0.5] puis négative sur [-0.5; 2.5] puis positive sur [2.5; +inf[.
+    Donc C{2} représente f'.
+
+  Ex 2:
+
+    f(x) = -2x²+90x-400, pour x e [15; 30]
+
+    1.
+      f'(x) = -2*2x+90-0
+            = -4x+90
+            -90 / -4  --> 90/4
+            x = 22.5
+
+      f(22.5) = 612.5
+
+      x; 15; 22.5; 30
+      variations de f'; +; 0; -
+      variations de f; /; 612.5; \
+
+      La production maximale est 22.5 pour une valeur de 612.5.
+
+  Ex 3:
+
+    1.
+      La courbe C{1} représente le chiffre d'affaires.
+
+    2.
+      Environ 450 000 €.
+
+
+
+
+
 
 
 
