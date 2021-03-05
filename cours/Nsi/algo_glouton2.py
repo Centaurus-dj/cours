@@ -39,17 +39,19 @@ def doSmallestStops(fuel_distance: int, distance_stations: list) -> list:
     if isAvailableToDoParcours(fuel_distance, distance_stations) is True: ### Using the condition function to check whether the driver can do or not the parcours
         initial_fuel = fuel_distance ### We save the inital amount, we'll be using it for marking a stop at a gas station.
         stations_to_stop = [] ### define the list we'll be returning with the gas stations we've stopped in it.
+        fuel_distance -= distance_stations[0]
         for i in range(0, len(distance_stations)-1): ### len(distance_stations)-1 to not have a IndexError due to a out of range index. 
             if (fuel_distance-distance_stations[i+1]) >= 0: ### If we have more gas or the amount needed to reach the next station
                 fuel_distance -= distance_stations[i+1] ### then substract the fuel we'll be consumming for reaching it.
             else: ### Otherwise we stop at this station and put again fuel at full capacity
                 stations_to_stop.append(i) ### and we append the station in our needed-stop-by-stations list
                 fuel_distance = initial_fuel
+                fuel_distance -= distance_stations[i+1] ### then substract the fuel we'll be consumming for reaching it.
         return stations_to_stop ### Return the list of the stations we'll need to stop by.
     else:
         raise Exception("This driver can't do the parcours") ### Raise an exception if the driver can't do the parcours.
 
-def chooseSeance(criteria: str, seance_list: list, criteria_value=60, multiple_seances=True, difference=20) -> str:
+def chooseSeance(criteria: str, seance_list: list, criteria_value=60, multiple_seances=True, difference=20, index_seance_needed=None) -> str:
     """Function to choose a certain amount of seances in a planning.
 
     Args
@@ -69,6 +71,9 @@ def chooseSeance(criteria: str, seance_list: list, criteria_value=60, multiple_s
 
         `difference`: int, optional
             A value used to pick the closest seances of the criteria_value in a certain proportion.
+
+        `index_seance_needed`: int, optional
+            The index of the seance we want to assist at all cost, by default defined as None.
     """
     l = list()
     if criteria == "start_time": search_key = "debut" ### keyword used in the dict storing the database
@@ -79,10 +84,22 @@ def chooseSeance(criteria: str, seance_list: list, criteria_value=60, multiple_s
     for seance_index in seance_list:
         l.append([abs(criteria_value-seance_list[seance_index][search_key]), seance_list[seance_index][search_key], seance_index, False]) ### creating dict to store: the abs value of the difference of the criteria given, value of elem, index of elem, boolean value used to know if put in the returned str.
         current_index = l.index([abs(criteria_value-seance_list[seance_index][search_key]), seance_list[seance_index][search_key], seance_index, False]) ### Picking the index of the newly created element of l, it will save us a lot of time of code-writing.
-        if l[current_index][0] <= difference: ### toggle the value to include or not the elem in the returning str.
-            l[current_index][3] = True
-        else:
-            l[current_index][3] = False
+        if index_seance_needed is not None: ### If want to participate to a seance in particular, then turn the search into a specialized one.
+            if l[current_index][2] == index_seance_needed: ### If it's the seance wanted
+                l[current_index][3] = True ### then add it in our returned str
+            else:
+                if True: 
+                    if l[current_index][0] <= difference: ### If under our difference, toggle the bool value to add it in our return str
+                        l[current_index][3] = True
+                    else:
+                        l[current_index][3] = False
+                else:
+                    l[current_index][3] = False
+        else: ### If index_seance_needed is None we use a simplest method to know which seance we need to return
+            if l[current_index][0] <= difference:
+                l[current_index][3] = True
+            else:
+                l[current_index][3] = False
     l.sort()
     ### An if-else condition used to avoid a too big processing request while it's only needed to have a little one.
     ### If condition is true, user asked for only one seance so we only add the first data set in our list.
@@ -185,9 +202,10 @@ seances = {
 
 
 ### Execution Bloc
-print(f"Ex1: Question 9.5.1:\n\t{isAvailableToDoParcours(r_base, d_base)}")
-print(f"Ex1: Question 9.5.2:\n\t{doSmallestStops(r_base, d_base)}")
+print(f"Ex1: Question 9.5.1:\n\t{isAvailableToDoParcours(r_base, d_base)}", end="\n\n")
+print(f"Ex1: Question 9.5.2:\n\t{doSmallestStops(r_base, d_base)}", end="\n\n")
 print("Ex2: Question b:\n\t-`critère A`: Aucun trouvé")
 print("\t-`critère B`: Aucun trouvé")
 print("\t-`critère C`: Aucun trouvé")
-print(f"Ex2: Question c:\n{chooseSeance('length', seances, 120)}\n{chooseSeance('start_time', seances, hrsToMins(14), difference=200)}\n{chooseSeance('end_time', seances, hrsToMins(16), difference=200)}")
+print(f"Ex2: Question c:\n{chooseSeance('length', seances, 80, difference=20)}\n{chooseSeance('start_time', seances, hrsToMins(14), difference=200)}\n{chooseSeance('end_time', seances, hrsToMins(16), difference=200)}", end="\n\n")
+print(f"Ex2: Question d:\n{chooseSeance('length', seances, 80, difference=20, index_seance_needed=9)}\n{chooseSeance('start_time', seances, hrsToMins(14), difference=200, index_seance_needed=9)}\n{chooseSeance('end_time', seances, hrsToMins(16), difference=200, index_seance_needed=9)} ")
