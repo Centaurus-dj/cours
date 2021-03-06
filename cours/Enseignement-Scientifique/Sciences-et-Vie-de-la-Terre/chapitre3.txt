@@ -1,0 +1,42 @@
+Chapitre 3: Le bilan thermique du coprs humain
+    Activité 10:
+
+        Recherche 1:
+            Experience 1:
+                témoin: 24.7 °C
+                Après contact avec bloc de glace: 24.2 °C
+
+                Type de mécanisme de dissipation d'énergie thermique associé: conduction
+                C'est une perte.
+
+            Experience 2:
+                témoin: 24.8 °C
+                Après sèche-cheveux: 25.4 °C
+
+                Type de mécanisme de dissipation d'énergie thermique associé: convection
+                C'est un gain.
+            
+            Experience 3:
+                témoin: 25 °C
+                Après résistance électrique: 25.2 °C
+
+                Type de mécanisme de dissipation d'énergie thermique associé: rayonnement
+                C'est un gain.
+
+            Experience 4:
+                témoin: 24.7 °C
+                Après avoir mis main dans l'eau à 37°C: 25.4 °C
+
+                Type de mécanisme de dissipation d'énergie thermique associé: évaporation
+                Mécanisme en pair avec la sudation durant un effort physique.
+                C'est un gain.
+
+        Recherche 2:
+            thermolyse -> la vasodilatation, transpiration, réactions comportementales
+            thermogenèse -> la vasoconstriction, frissons et grelottements, chair de poule, réactions comportementales
+        
+            rafraichissement du corps déclenché -> vasodilatation + transpiration + réactions comportementales
+            Protection contre le froid déclenché -> chair de poule + vasoconstriction + frissons et grelottements + réactions comportementales
+
+DM p.123
+Définition p.124

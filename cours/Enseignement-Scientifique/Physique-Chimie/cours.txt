@@ -1,0 +1,13 @@
+activité p. 74:
+
+  lambda(max) = 3.10(-3) 1/T
+  Loi de Wien
+  Lambda(max) T = 2.9x10(-3)
+
+  5/
+    Peu de précisions car il y a plusieurs méthodes de calcul.
+  6/
+    En étant sur l'ISS, on évite le parasitage de l'atmosphère terrestre.
+  7/
+    Pour le Soleil: lamnda(max)= 500 nm
+    T = (2.9x10(-3))/(500x10(-9)) = 5 800 K
