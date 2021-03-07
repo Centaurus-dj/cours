@@ -16,7 +16,7 @@ I/ GETRENNT UND WIEDERVEREINIGT
   durfen nicht sagen was sie dachten.
 
   Compréhension de l'écrit:
-    voir fichier ("file:///home/alexis/Documents/cours/deustch/docs/die%20Teilung%20Deutschlands%20CO%20et%20CE.odt")
+    voir fichier ("file://home/alexis/Documents/import-cours/cours/deustch/docs/die_Teilung_Deutschlands_CO_et_CE.odt")
 
   2) Gibt es moch eine Mauer in den Köpfen ?
     die Ossis (péjoratif, raciste)

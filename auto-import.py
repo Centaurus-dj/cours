@@ -33,7 +33,7 @@ def ManageFileImports(file, game_path, log_path):
         try:
             exec(f"""import {game_modules_path}{module}""")
         except ModuleNotFoundError:
-            pass
+            os.system("python -m pip install --user {}".format(module.split(".")[0]))
         except ImportError:
             if module in modules_name_from_files:
                 open(f"{log_path}/log.txt", "w").write(f"ImportError: In-game module \"{module}\" can't be found")
@@ -61,8 +61,9 @@ def main(path):
             elif a == '--handle-imports':
                 files_dir = SearchFiles(path)
                 for file in files_dir:
-                    ManageFileImports(file, path, ".")
-                    print(f"[auto-import.py] {file}'s imports checked and managed")
+                    if file.endswith(".py"):
+                        ManageFileImports(file, path, ".")
+                        print(f"[auto-import.py] {file}'s imports checked and managed")
             elif a == '--handle-imports-dev':
                 files_dir = SearchFiles(path)
                 for file in files_dir:
@@ -73,7 +74,7 @@ def main(path):
                 print('Unrecognised argument.')
 
 
-path = r"cours/Nsi/algo_knn/main.py"
+path = r"cours/Nsi/algo_knn/"
 files_dir = []
 
 

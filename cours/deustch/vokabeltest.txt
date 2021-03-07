@@ -6,7 +6,7 @@ vokabeltest:
     chute du mur: Mauerfall
     réunification: Wiedervereinigung
     être séparé: getrennt sein
-    ?: Unterschiede 
+    différence: Unterschiede 
     préjugés: Vorurteile
     deux Etats: zwei Staten
     perdants: Vertierer
