@@ -128,13 +128,10 @@ videos_to_send = [ ### Composition: ("Name", file_size (Mo))
     ("Visite de l'aéroport", 785), ("Visite d'un temple", 1225), ("Plus grand tobogan du monde", 385), ("Marché", 150),
     ("Petit déjeuner", 1465), ("Rencontre avec Naja", 75), ("Cours après la rencontre", 1125), ("Musée du ticket de métro", 1378),
     ("Nage avec les raies", 425), ("Visite de la capitale", 505)]
-#print()
-GiveBackMostLittle(2*741-1000, money_possibilities)
-print(" ")
-PickMostObjects(5, inventory)
-print(" ")
-PickMostValuableObjects(5, inventory)
-print(" ")
-print(SetSendingOrder(videos_to_send, "decrois"))
-print(" ")
-print(SendMostLittleMails(SetSendingOrder(videos_to_send, "decrois"), 2000))
+
+
+GiveBackMostLittle(2*741-1000, money_possibilities, end="\n\n")
+PickMostObjects(5, inventory, end="\n\n")
+PickMostValuableObjects(5, inventory, end="\n\n")
+print(SetSendingOrder(videos_to_send, "decrois"), end="\n\n")
+print(SendMostLittleMails(SetSendingOrder(videos_to_send, "decrois"), 2000), end="\n\n")
