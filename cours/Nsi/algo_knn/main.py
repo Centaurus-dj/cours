@@ -30,15 +30,15 @@ def templateFunction(data: DataFrame, save=True, filename="pic", filepath=""):
     else:
         plt.show()
 
-def templateFunction2(data: DataFrame, show=True, filename="pic", filepath=""):
+def templateFunction2(data: DataFrame, save=True, filename="pic", filepath="", length=2.5, width=0.75, k_base=3, fontsize=12, return_kind=False, kinds_lib=None):
     x = data.loc[:,"petal_length"]
     y = data.loc[:,"petal_width"]
     lab = data.loc[:,"species"]
 
     ### valeurs
-    longueur=2.5
-    largeur=0.75
-    k=3
+    longueur = length
+    largeur = width
+    k = k_base
 
     ### graphique
     fig = plt.figure()
@@ -55,24 +55,35 @@ def templateFunction2(data: DataFrame, show=True, filename="pic", filepath=""):
     model.fit(d,lab)
     prediction = model.predict([[longueur,largeur]])
 
+    ### Library of kinds of data
+    if kinds_lib is None:
+        kinds_lib = {
+            "iris": ["setosa", "versicolor", "virginica"]
+        }
+
     #Affichage résultats
+    returned = ""
     txt = "Résultat : "
     
     if prediction[0] == 0:
-        txt += "setosa"
+        returned = kinds_lib["iris"][0]
     if prediction[0] == 1:
-        txt += "versicolor"
+        returned = kinds_lib["iris"][1]
     if prediction[0] == 2:
-        txt += "virginica"
+        returned = kinds_lib["iris"][2]
+    txt += returned
 
-    plt.text(3,0.5, f"largeur : {largeur} cm longueur : {longueur} cm", fontsize=12)
-    plt.text(3,0.3, f"k : {k}", fontsize=12)
-    plt.text(3,0.1, txt, fontsize=12)
+    plt.text(3,0.5, f"largeur : {largeur} cm longueur : {longueur} cm", fontsize=fontsize)
+    plt.text(3,0.3, f"k : {k}", fontsize=fontsize)
+    plt.text(3,0.1, txt, fontsize=fontsize)
     
-    if show is True:
-        plt.show()
-    else:
+    if return_kind is True:
+        return returned
+
+    if save is True:
         fig.savefig(f"{filepath}{filename}.png")
+    else:
+        plt.show()
 
 
 
@@ -82,5 +93,7 @@ iris = pds.read_csv(os.path.realpath("iris.csv")) ### Shell variant
 
 
 ### Execution column
-templateFunction(iris, False, "iris_data")
-templateFunction2(iris, False, "iris_data2")
+templateFunction(iris, True, "iris_data")
+templateFunction2(iris, True, "iris_data2")
+templateFunction2(iris, True, "iris_data3_k=5", k_base=5)
+print("Si k=5, l'iris est:", templateFunction2(iris, k_base=5, return_kind=True))
