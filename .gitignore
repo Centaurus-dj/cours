@@ -1,3 +1,7 @@
+### Extensions of files
 .swp
+.pub
+
+### Files in particular
 git_publikey
-git_publikey.pub
+data.json
