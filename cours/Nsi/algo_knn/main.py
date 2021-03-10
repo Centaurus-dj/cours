@@ -38,11 +38,9 @@ def templateFunction(data: DataFrame, save=True, filename="pic", filepath=""):
 
 def templateFunction2(data: DataFrame, save=True, filename="pic", filepath="", length=2.5, width=0.75, k_base=3, fontsize=12, return_kind=False, kinds_lib=None):
     x = data.loc[:,"petal_length"]
-    print("x:", x, end="\n\n")
     y = data.loc[:,"petal_width"]
-    print("y:", y, end="\n\n")
     lab = data.loc[:,"species"]
-    print("lab:", lab, end="\n\n")
+    print(lab)
 
     ### valeurs
     longueur = length
@@ -94,34 +92,37 @@ def templateFunction2(data: DataFrame, save=True, filename="pic", filepath="", l
         else:
             plt.show()
 
-def CustomFunction(data: list, save=True, filename="pic", filepath="", length=2.5, width=0.75, k_base=3, fontsize=12, return_kind=False, kinds_lib=None):
-    head = data.pop(0)
-    x = list()
-    y = list() 
-    lab = list()
-    for elem in data:
-        x.append((float(elem[head.index(head[0])]), elem[head.index(head[2])]))
-        y.append((float(elem[head.index(head[1])]), elem[head.index(head[2])]))
-        lab.append(elem[head.index(head[2])])
+def CustomFunction(dataset: list, save=True, filename="pic", filepath="", length=2.5, width=0.75, k_base=3, fontsize=12, return_kind=False, kinds_lib=None):
+    dataset.pop(0)
+    data = dict(x=[], y=[], lab=[], y_sorted=dict(), x_sorted=dict())
+    for curr_data in dataset:
+        data["x"].append(float(curr_data[0]))
+        data["y"].append(float(curr_data[1]))
+        data["lab"].append(curr_data[2])
 
     ### valeurs
     longueur = length
     largeur = width
     k = k_base
+    
+    for lab_i in range(0, 3):
+        data["x_sorted"][f"lab=={lab_i}"] = [data["x"][i] for i in range(0, len(data["lab"])) if [lab == str(lab_i) for lab in data["lab"]][i]]
+        data["y_sorted"][f"lab=={lab_i}"] = [data["y"][i] for i in range(0, len(data["lab"])) if [lab == str(lab_i) for lab in data["lab"]][i]]
+
 
     ### graphique
     fig = plt.figure()
-    plt.axis('equal')
-    plt.scatter(x[0] if x[1 == 0]else pass, y[1 == 0], color='g', label='setosa')
-    plt.scatter(x[1 == 1], y[1 == 1], color='r', label='versicolor')
-    plt.scatter(x[1 == 2], y[1 == 2], color='b', label='virginica')
+    plt.axis('equal')   
+    plt.scatter(data["x_sorted"]["lab==0"], data["y_sorted"]["lab==0"], color='g', label='setosa')
+    plt.scatter(data["x_sorted"]["lab==1"], data["y_sorted"]["lab==1"], color='r', label='versicolor')
+    plt.scatter(data["x_sorted"]["lab==2"], data["y_sorted"]["lab==2"], color='b', label='virginica')
     plt.scatter(longueur, largeur, color='k')
     plt.legend()
 
     #algo knn
-    d = list(zip(x,y))
+    d = list(zip(data["x"], data["y"]))
     model = KNeighborsClassifier(n_neighbors=k)
-    model.fit(d,lab)
+    model.fit(d,data["lab"])
     prediction = model.predict([[longueur,largeur]])
 
     ### Library of kinds of data
@@ -134,25 +135,24 @@ def CustomFunction(data: list, save=True, filename="pic", filepath="", length=2.
     returned = ""
     txt = "Résultat : "
     
-    if prediction[0] == 0:
+    if prediction[0] == str(0):
         returned = kinds_lib["iris"][0]
-    if prediction[0] == 1:
+    if prediction[0] == str(1):
         returned = kinds_lib["iris"][1]
-    if prediction[0] == 2:
+    if prediction[0] == str(2):
         returned = kinds_lib["iris"][2]
     txt += returned
 
     if return_kind is True:
         return returned
 
-    if sys.version[8] == "3":
-        plt.text(3,0.5, f"largeur : {largeur} cm longueur : {longueur} cm", fontsize=fontsize)
-        plt.text(3,0.3, f"k : {k}", fontsize=fontsize)
-        plt.text(3,0.1, txt, fontsize=fontsize)
-        if save is True:
-            fig.savefig("{fielpath}{filename}.png")
-        else:
-            plt.show()
+    plt.text(3,0.5, f"largeur : {largeur} cm longueur : {longueur} cm", fontsize=fontsize)
+    plt.text(3,0.3, f"k : {k}", fontsize=fontsize)
+    plt.text(3,0.1, txt, fontsize=fontsize)
+    if save is True:
+        fig.savefig("{fielpath}{filename}.png")
+    else:
+        plt.show()
 ### Objects
 if __name__ == "__main__":
     cr = csvReader("iris.csv", ",")
