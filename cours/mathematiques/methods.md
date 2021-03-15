@@ -1,0 +1,1 @@
+racine carré (=square root): sqrt

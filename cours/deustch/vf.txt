@@ -12,3 +12,8 @@ VF?:
   bleiben, blieb, -, bleiben, rester
   tragen, trugst, habe getragen, -, porter
   geben, gaben, haben gegeben, gebt, -
+
+VF11:
+  -, sprachst, hat gesprochoen, sprechen, parler
+  tragen, -, haben getragen, trägst, porter
+  schlagen, schlug, -, schlagen
