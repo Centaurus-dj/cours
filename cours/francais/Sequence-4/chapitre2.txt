@@ -1,0 +1,74 @@
+Chapitre 2: Les classes et les fonctions grammaticales des mots et des groupes de mots
+  Extrait de `L'intervention` de Victor Hugo
+
+AIDE: p.526
+
+
+1/ Les classes grammaticales des mots
+  Le texte est une scène de ménage.
+
+  pauvres: adjectif qualificatif
+  je: pronom personnel
+  mais: conjonction coordination
+  ma: déterminant
+  inquiète: verbe
+  les: articles définis
+  lesquelles: pronom relatif
+  fanfreluches: nom commun
+  assez: adverbe
+  à: préposition
+  me: pronom personnel
+  que: pronom relatif
+  toi & moi: pronom personnel
+  cela: pronom démonstratif
+  quels: déterminant exclamatif
+  facilement: adverbe
+  pourtant: adverbe
+  Fainéants: adjectif employé comme nom
+
+  Ex1 p. 527:
+
+    a.
+      te: pronom personnel
+      bénéficiaire: adjectif qualificatif
+    b.
+      qui: pronom interrogatif
+      bénéficiaires: ajectif employe comme nom
+    c.
+      attentifs: adjectif
+      quelques-uns: pronom indéfini
+      toute: déterminant indéfini
+    d.
+      Grâce à: groupe prépositionnel
+      brouillons: nom
+      numérisés: participe passé employé comme adjectif
+    e.
+      très: adverbe d'intensité
+      grâce: nom
+      brouillonne: adjectif
+
+2/ Les classes grammaticales des groupes
+  Indiquez la classe grammaticale de chaque groupe souligné
+
+  Les groupes de mots ont eux aussi des classes grammaticales.
+
+  "des femmes mieux mises que moi": groupe nominal
+  "pour être jolie": groupe verbale infinitif
+  "sur lequel il y a une robe de soie": proposition subordonnée relative
+  "qui passent": proposition relative
+  "des idiots en bottes vernies": groupe nominal
+  "et moi j'ai les mains noires du travail": proposition indépendante
+
+  Il existe trois groupes principaux de mots:
+    - Groupe nominal --> GN
+    - Groupe verbal --> GV
+    - Proposition
+
+  Exercice Texte:
+
+    a) poltron: GN
+    b) GN
+    c) GN
+    d) "Quelquefois": Adverbe de temps
+    e) "Fausses ou véritable": groupe adjectival
+    f) proposition subordonnée conjonctive, fonction circonstentielle de conséquence
