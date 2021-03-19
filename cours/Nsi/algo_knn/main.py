@@ -92,7 +92,56 @@ def templateFunction2(data: DataFrame, save=True, filename="pic", filepath="", l
         else:
             plt.show()
 
-def CustomFunction(dataset: list, save=True, filename="pic", filepath="", length=2.5, width=0.75, k_base=3, fontsize=12, return_kind=False, kinds_lib=None):
+def CustomFunction(dataset: list, save=True, filename="graph", 
+    filepath="", length=2.5, width=0.75, 
+    k_base=3, fontsize=12, return_kind=False, kinds_lib=None):
+    """A function using KNN algorithm, a machine learning algorithm. | Semi-dynamic function
+
+    Args
+    ----
+        `dataset`: list
+            The set of data passed to the function. 
+            --> Dynamic use
+
+        `save`: bool, optional
+            `True`: We save the graph returned in a PNG file.
+            `False`: We show the graph in a GUI with matplotlib module.
+            --> Dynamic use
+
+        `filename`: str, optional
+            The name of the file we'll save, by default it's "graph".
+            --> Dynamic use
+
+        `filepath`: str, optional
+            The path for storing the file.
+            --> Dynamic use
+
+        `length`: float, int, optional
+            The length of the iris.
+            --> Semi-dynamic use
+
+        `width`: float, int, optional
+            The width of the iris.
+            --> Semi-dynamic use
+
+        `k_base`: float, int, optional
+            The k value we'll use by default.
+            --> Semi-dynamic use
+
+        `fontsize`: float, int, optional
+            The size of the font of the text in the graph.
+            --> Dynamic use
+
+        `return_kind`: bool, optional
+            `True`: We return the found kind of iris before the creation of a graph.
+            `False`: We create a graph returning the kind and the data searched.
+            --> Dynamic use.
+
+        `kinds_lib`: dict, optional
+            A dictionary storing the different kinds of iris.
+            --> Static use
+    """
+    
     dataset.pop(0)
     data = dict(x=[], y=[], lab=[], y_sorted=dict(), x_sorted=dict())
     for curr_data in dataset:
@@ -150,7 +199,7 @@ def CustomFunction(dataset: list, save=True, filename="pic", filepath="", length
     plt.text(3,0.3, f"k : {k}", fontsize=fontsize)
     plt.text(3,0.1, txt, fontsize=fontsize)
     if save is True:
-        fig.savefig("{fielpath}{filename}.png")
+        fig.savefig(f"{filepath}{filename}.png")
     else:
         plt.show()
 ### Objects
