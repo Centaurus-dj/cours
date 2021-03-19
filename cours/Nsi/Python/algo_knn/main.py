@@ -4,13 +4,17 @@
 import sys
 import os
 from os import environ
+
+from numpy import sqrt
 from modules.csv_reader import csvReader
 environ["PWD"] = "home/alexis/Documents/cours/cours/Nsi/algo_knn"
 
 
 ### Imports
 import pandas as pds
-import matplotlib.pyplot as plt
+from matplotlib import (
+    pyplot as plt,
+)
 from pandas.core.frame import DataFrame
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -141,7 +145,46 @@ def CustomFunction(dataset: list, save=True, filename="graph",
             A dictionary storing the different kinds of iris.
             --> Static use
     """
+    def square(to_square):
+        return to_square**2
+
+    def classifyNeighbors(d1, d2, label):
+        neighbor_prox = list()
+        neighbor_prox.append([sqrt(square(d2[0]-d1[0])+square(d2[1]-d1[1])), label])
+        return neighbor_prox
     
+    def kAlgo(base, data, label):
+        r = list()
+        for dataset in data:
+            r.append(classifyNeighbors(base, dataset, label[data.index(dataset)]))
+        return r
+    
+    def predict(dataset, test_number=5):
+        def mostFrequent(list):
+            d = dict()
+            most_value = []
+            for elem in list:
+                if elem[0][1] not in d.keys():
+                    d[elem[0][1]] = 0
+                d[elem[0][1]] += 1
+            for key, value in d.items():
+                if most_value == []:
+                    most_value = [value, key]
+                if value > most_value[0]:
+                    most_value = [value, key]
+            return most_value[1]
+
+        dataset.sort()
+        l = list()
+        x = 0
+        for data in dataset:
+            if x <= (test_number-1):
+                l.append(data)
+                x += 1
+            else:
+                break
+        return (l, mostFrequent(l))
+
     dataset.pop(0)
     data = dict(x=[], y=[], lab=[], y_sorted=dict(), x_sorted=dict())
     for curr_data in dataset:
@@ -170,10 +213,9 @@ def CustomFunction(dataset: list, save=True, filename="graph",
 
     #algo knn
     d = list(zip(data["x"], data["y"]))
-    model = KNeighborsClassifier(n_neighbors=k)
-    model.fit(d,data["lab"])
-    prediction = model.predict([[longueur,largeur]])
-
+    model = kAlgo((longueur, largeur), d, data["lab"])
+    prediction = predict(model, k)
+    
     ### Library of kinds of data
     if kinds_lib is None:
         kinds_lib = {
@@ -184,29 +226,39 @@ def CustomFunction(dataset: list, save=True, filename="graph",
     returned = ""
     txt = "Résultat : "
     
-    if prediction[0] == str(0):
+    if prediction[1] == str(0):
         returned = kinds_lib["iris"][0]
-    if prediction[0] == str(1):
+    if prediction[1] == str(1):
         returned = kinds_lib["iris"][1]
-    if prediction[0] == str(2):
+    if prediction[1] == str(2):
         returned = kinds_lib["iris"][2]
     txt += returned
 
     if return_kind is True:
         return returned
+    print(prediction[0])
+    rayon=prediction[0][k-1][0]
 
     plt.text(3,0.5, f"largeur : {largeur} cm longueur : {longueur} cm", fontsize=fontsize)
     plt.text(3,0.3, f"k : {k}", fontsize=fontsize)
     plt.text(3,0.1, txt, fontsize=fontsize)
+
+    circle = plt.Circle((longueur, largeur), radius=rayon[0], color="g", fill=False)
+    ax = plt.gca()
+    ax.add_patch(circle)
+    plt.axis("scaled")
+
     if save is True:
         fig.savefig(f"{filepath}{filename}.png")
     else:
         plt.show()
+
+
 ### Objects
 if __name__ == "__main__":
     cr = csvReader("iris.csv", ",")
 
-    CustomFunction(cr.get(), False)
+    CustomFunction(cr.get(), True, "graph_cricle")
 
 if __name__ != "__main__":
     ### Global variables \\ Two variants to toggle for which way used to launch script
