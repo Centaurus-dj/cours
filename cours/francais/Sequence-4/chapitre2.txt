@@ -66,9 +66,49 @@ AIDE: p.526
 
   Exercice Texte:
 
-    a) poltron: GN
+    a) "le duel": GN
     b) GN
     c) GN
     d) "Quelquefois": Adverbe de temps
     e) "Fausses ou véritable": groupe adjectival
     f) proposition subordonnée conjonctive, fonction circonstentielle de conséquence
+
+3/ Les fonctions grammaticales
+  Indiquez la focntion grammaticale de chaque mot ou groupe en italiques dans le texte.
+
+  "que je ne suis pas affreuse": COD de "sais" 
+  "des femmes mieux mises que moi": COD de "voir"
+  "une femme": Attribut du sujet 
+  "qui passent": CDN de "les toilettes"
+  "sur le boulevard": CC de lieu
+  "de leur prochaine": CDN de "l'amant"
+  "tes mirliflores": sujet de "ont"
+
+  Exercice 1 p.529:
+
+    a.
+      "en quatre tomes": CDN de "bande-dessinée"
+      "avec brio": CC de manière
+      "du thème de la famille": COI de "traite"
+
+    b.
+      "sans se soucier des promeneurs": CC de manière
+      "des écureuils": sujet de "jouaient"
+    c.
+      "capable de tout": Attribut du COD "cet homme"
+
+4/ A retenir
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+  La classe grammaticale d'un mot fait partie de sa définition:
+    un nom est toujours un nom, un adjectif est toujours un adjectif...
+  Les groupes ont également leurs classes, organisées autour d'un mot-noyau:
+    - Le groupe nominal (GN) ne contient pas de verbes et a pour mot-noyau un nom.
+    - Le groupe verbal a pour mot-noyau un verbe à l'infinitif ou au participe.
+    - La proposition est porganisée autour d'un verbe conjugué.
+  La fonction grammaticale d'un mot ou d'un groupe est le rôle qu'il joue dans la phrase.
+  Elle dépend essentiellement de sa place par rapport aux autres.
+  Voir le tableau récapitulatif qui vous a été distribué.
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////

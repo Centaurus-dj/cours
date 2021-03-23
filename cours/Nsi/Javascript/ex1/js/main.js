@@ -5,7 +5,6 @@ function toggleLinksBehaviour () {
   } else if (getCookie('link') == 'current') {
     setCookie('link', 'new', 365);
   }
-  console.debug(document.cookie);
   writeValue(getCookie('link'), 'link-behaviour');
 }
 // Exercises Functions
@@ -68,21 +67,83 @@ function changeGuessNumber () {
 // Exercise 5
 function checkStringAppearence (stringToSearch, searchString) {
   console.log('In', '"' + searchString + '"', 'we search', '"' + stringToSearch + '"');
+  var body = document.getElementById('result-check');
   var x = 0;
+  var r = String(stringToSearch + ' found at position: \n');
+  var None = true;
   for (char of searchString) {
     x += 1;
     if (char == stringToSearch) {
+      None = false;
       console.log('Found:', char, 'at position of index', x, '(' + searchString.charAt(x - 1) + ')');
+      if (body == undefined || body == null) {
+        r += String('- ' + (x - 1) + ' in given text. \n');
+      }
+      else {
+        r = r.replace("\n", "<br>");
+        r += String('- ' + (x-1) + ' in given text. <br>');
+      }
+      
     }
   }
+  if (None == true) {
+    r = String('In the given text, we can\'t find any ' + stringToSearch + '.');
+  }
+  console.log(body);
+  if (body == undefined || body == null) {
+    alert(r);
+  } else {
+    body.innerHTML = r;
+  }
 }
+// Example 2 lesson 1
+function simpleJsInteraction (word) {
+  alert(word + ' Madame ou Monsieur');
+}
+// Example 3 lesson 1
+function changeColour () {
+  var color = document.body.style.backgroundColor;
+  if (color == 'rgb(26, 26, 26)' || color == '') {
+    alert('You clicked me! We change the colour to orange.');
+    document.body.style.backgroundColor = 'orange';
+  } else {
+    alert('You clicked me! We change the colour to its inital state.');
+    document.body.style.backgroundColor = 'rgb(26, 26, 26)';
+  }
+}
+// Example 4 lesson 1
+function simpleSelection () {
+  const selector = document.getElementById('choice');
+  const myChoice = selector[selector.selectedIndex];
+  alert('Vous avez choisi la valeur = ' + myChoice.value + ', soit le choix = ' + myChoice.text);
+}
+// Form Example lesson 1
+function simpleFormInteraction () {
+  var response = document.getElementById('responseId').value
+
+  if (response == '1' || response == 'un') {
+    document.getElementById('result-area').innerHTML = 'one';
+  } else if (response == '2' || response == 'deux') {
+    document.getElementById('result-area').innerHTML = 'two';
+  } else if (response == '3' || response == 'trois') {
+    document.getElementById('result-area').innerHTML = 'three';
+  } else if (response == '4' || response == 'quatre') {
+    document.getElementById('result-area').innerHTML = 'four';
+  } else {
+    document.getElementById('result-area').innerHTML = 'Je ne comprend pas';
+  }
+}
+// Exercise 6
+function calculateQcm () {
+  console.log();
+}
+
 // Utils Functions
 function getIdInputValue (inputId) {
   return document.getElementById(inputId).value;
 }
 function writeValue (variable, elemId) {
   var body = document.getElementById(elemId);
-  console.log(elemId, getCookie('link'), body);
   if (body == null) {
     console.error("Can't write in null data");
   } else {

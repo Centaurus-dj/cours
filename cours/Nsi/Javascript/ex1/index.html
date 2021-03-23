@@ -8,7 +8,7 @@
   <script src="js/main.js"></script>
   <title>Premier cours pour comprendre le javascript</title>
 </head>
-<body class="dark-bg" onload="writeValue(getCookie('linkBehaviour'), 'link-behaviour')">
+<body class="dark-bg">
   <div class="wrap">
     <header class="float-center">NSI Hubpage</header>
   </div>
@@ -18,7 +18,27 @@
         <p>
           <h3>Js Actions</h3>
           <button onclick="simpleAlert()">Click for first statement --> Alert</button> <br>
-          <button onclick="simpleParsing()">Click for second statement --> prompt & parsing</button>
+          <button onclick="simpleParsing()">Click for second statement --> prompt & parsing</button> <br>
+          <button onclick="simpleJsInteraction('Bonjour')">Click for third statement --> Simple DOM interaction</button> <br>
+          <div id="js-demo-container-1">
+            <h4>On Html Elements</h4>
+            <h5>Button to show date</h5>
+            <button onclick="if(document.getElementById('js-demo-1').innerHTML == '') {document.getElementById('js-demo-1').innerHTML=Date()} else {document.getElementById('js-demo-1').innerHTML=''}">Click on Button 1</button>
+            <p id="js-demo-1"></p>
+            <h5>Another Button to modify HTML content</h5>
+            <div>We are going to modify the content of the HTML tag of paragraph named "js-demo-2" (using id="js-demo-2"). <br>He's changing under your eyes.</div> <br>
+            <p id="js-demo-2">Here the HTML tag named "js-demo-2": We're going to change the text.</p>
+            <button onclick="document.getElementById('js-demo-2').innerHTML='We\'re changing'">Click on Button 2</button>
+          </div>
+          <button onclick="changeColour()">Click for fourth statement --> Change Background Color</button> <br>
+          <div id="js-demo-container-2">
+            <h4>onchange interaction</h4>
+            <select name="lang" id="choice" onchange="simpleSelection()">
+              <option value="fr"> Français </option>
+              <option value="zh"> Chinois </option>
+              <option value="it"> Italien </option>
+            </select>
+          </div>
         </p>
         <div id="docs-access">
           <h3>Js Class</h3>
@@ -29,7 +49,7 @@
         <p>
           <h3>Options</h3>
           <div>
-            link will open in <txt id="link-behaviour"></txt> tab.
+            link will open in <txt id="link-behaviour">new</txt> tab.
           </div>
           <button onclick="toggleLinksBehaviour()">Change Opening links</button>
         </p>
@@ -38,6 +58,7 @@
           - <a href="#" onclick="openLink('pages/js-exercise-2.html')">Exercice 2</a> <br>
           - <a href="#" onclick="openLink('pages/js-exercise-4.html')">Exercice 4</a> <br>
           - <a href="#" onclick="openLink('pages/js-exercise-5.html')">Exercice 5</a> <br>
+          - <a href="#" onclick="openLink('pages/js-example-form.html')">Exemple d'un formulaire</a> <br>
         </p>
       </div>
     </div>
