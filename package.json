@@ -1,0 +1,7 @@
+{
+  "name": "class-website",
+  "version": "0.1.0",
+  "author": "Centaurus",
+  "description": "A website used to see classes online",
+  "main": "main.js"
+}

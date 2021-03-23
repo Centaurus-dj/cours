@@ -1,13 +1,187 @@
-function simpleAlert(){
+// Hub Functions
+function toggleLinksBehaviour () {
+  if (getCookie('link') == 'new') {
+    setCookie('link', 'current', 365);
+  } else if (getCookie('link') == 'current') {
+    setCookie('link', 'new', 365);
+  }
+  console.debug(document.cookie);
+  writeValue(getCookie('link'), 'link-behaviour');
+}
+// Exercises Functions
+// Example lesson 1
+function simpleAlert () {
   alert('Bonjour à la classe de première NSI');
 }
-function simpleParsing(){
-  var a, b, produit, somme;
-  a = prompt("Donnez un nombre");
-  b = prompt("Donnez un autre nombre");
-  a = parseFloat(a);
-  b = parseFloat(b);
-  produit = a*b;
-  somme = a+b;
-  alert("le produit est "+ produit + ", et la somme est "+ somme)
+// Exercise 1
+function simpleParsing () {
+  var a = parseFloat(prompt('Donnez un nombre'));
+  var b = parseFloat(prompt('Donnez un autre nombre'));
+  var produit = a * b;
+  var somme = a + b;
+  if (isNaN(a) && isNaN(b)) {
+    alert('Les deux nombres n\'ont pas étés rentrés');
+  } else if (isNaN(a) || isNaN(b)) {
+    alert('Un nombre n\'a pas été rentré');
+  } else {
+    alert('le produit de ' + a + ' et ' + b + ' est ' + produit + ', et la somme est ' + somme);
+  }
 }
+// Exercise 2 
+function pythagoreFunc (input1Id, input2Id) {
+  var ab = parseFloat(document.getElementById(input1Id).value);
+  var ac = parseFloat(document.getElementById(input2Id).value);
+  var bcSquare = ab ** 2 + ac ** 2;
+  var bc = Math.sqrt(ab ** 2 + ac ** 2);
+
+  console.log(ab, ac);
+  console.log(bcSquare + ' = ' + bc);
+  return bc;
+}
+// Exercise 4
+function guessNumber () {
+  var guessValue = window.guessValue;
+  var input = document.getElementById('guess-input').value;
+  console.log('Value to guess:', guessValue);
+  var body = document.getElementById('return-info');
+  if (input != '') {
+    if (input > guessValue) {
+      body.innerText = 'The number to guess is less than ' + input + ' (entered: ' + input + ')';
+    } else if (input < guessValue) {
+      body.innerText = 'The number to guess is greater than ' + input + ' (entered: ' + input + ')';
+    } else {
+      body.innerText = 'The number to guess is exactly ' + guessValue + ' (entered: ' + input + ')';
+    }
+  } else {
+    body.innerText = 'You haven\'t entered a guess';
+  }
+  console.log('return-info:', body.innerText);
+  console.log('input-value:', input);
+}
+function changeGuessNumber () {
+  window.guessValue = Math.floor(Math.random() * 20);
+  console.clear();
+  console.log("New Value to guess:", window.guessValue);
+  document.getElementById('guess-input').value = '';
+  guessNumber();
+}
+// Exercise 5
+function checkStringAppearence (stringToSearch, searchString) {
+  console.log('In', '"' + searchString + '"', 'we search', '"' + stringToSearch + '"');
+  var x = 0;
+  for (char of searchString) {
+    x += 1;
+    if (char == stringToSearch) {
+      console.log('Found:', char, 'at position of index', x, '(' + searchString.charAt(x - 1) + ')');
+    }
+  }
+}
+// Utils Functions
+function getIdInputValue (inputId) {
+  return document.getElementById(inputId).value;
+}
+function writeValue (variable, elemId) {
+  var body = document.getElementById(elemId);
+  console.log(elemId, getCookie('link'), body);
+  if (body == null) {
+    console.error("Can't write in null data");
+  } else {
+    body.innerText = variable;
+  }
+}
+function openLink (link) {
+  value = getCookie('link');
+  if (value == 'new') {
+    window.open(link, '_blank');
+  } else {
+    window.location.href = link;
+  }
+}
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+function checkCookie() {
+  var user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
+  }
+}
+
+
+// Draw functions
+function drawTriangle (ab, ac, bc, drawingSpaceId) {
+  var abDraw = ab * 50;
+  var acDraw = ac * 50;
+  var drawingSpace = document.getElementById(drawingSpaceId);
+  if (!drawingSpace.getContext) {
+    console.error('Tag given isn\'t a canvas one');
+    return;
+  } else {console.log('drawing Space accessed');}
+  var ctx = drawingSpace.getContext('2d');
+  var coordsAx = 50;
+  var coordsAy = 50;
+  var coordsBx = coordsAx+abDraw;
+  var coordsBy = coordsAy;
+  var coordsCx = coordsAx;
+  var coordsCy = coordsAy + acDraw;
+  var dataxDist = coordsBx + 100;
+  drawingSpace.width = innerWidth;
+  drawingSpace.height = innerHeight;
+
+  console.log("width:", innerWidth + ", height:", innerHeight);
+  console.log("dataxDist", dataxDist);
+  console.log('ab:', ab);
+  console.log('ac:', ac);
+  console.log('bc:', bc);
+  
+  
+  // Clean the drawing space
+  ctx.clearRect(0, 0, drawingSpace.width, drawingSpace.height);
+
+  // Set line stroke and line width
+  ctx.strokeStyle = 'white';
+  ctx.lineWidth = 5;
+
+  // Draw triangle
+  //  A     B
+  //
+  //  C
+  ctx.beginPath();
+  ctx.moveTo(coordsAx - ctx.lineWidth/2, coordsAy);
+  ctx.lineTo(coordsBx, coordsBy);
+  ctx.lineTo(coordsCx, coordsCy);
+  ctx.lineTo(coordsAx, coordsAy);
+  ctx.stroke();
+  ctx.closePath();
+  
+  // Draw data about segments
+  ctx.font = "20px Georgia";
+  ctx.fillStyle = "white";
+  ctx.fillText('ab:' + ab + ' cm', dataxDist, 50);
+  ctx.fillText('ac:' + ac + ' cm', dataxDist, 80);
+  ctx.fillText('bc:' + bc + ' cm', dataxDist, 110);
+}
+guessValue = Math.floor(Math.random() * 20);
+setCookie('link', 'new', 365);

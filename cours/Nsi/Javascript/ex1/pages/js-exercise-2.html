@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/master.css">
+  <script src="../js/main.js"></script>
+  <title>Exercice 2 - Javascript</title>
+</head>
+<body class="dark-bg">
+  <div id="get-back">
+    <a class="back-link" href="../index.html">Return</a>
+  </div> <br>
+  <div id="comments">
+    Longueur AB: <input id="ab_width" type="text"> <br>
+    Longueur AC: <input id="ac_width" type="text">
+    <button onclick="drawTriangle(getIdInputValue('ab_width'), getIdInputValue('ac_width'), pythagoreFunc('ab_width', 'ac_width'), 'triange-result')">Submit</button>
+  </div>
+  <div id="drawing-space">
+    <div>Caution: Every entry is multiplied by 50</div>
+    <canvas id="triange-result"></canvas>
+  </div>
+</body>
+</html>

@@ -4,19 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/master.css">
   <script src="js/main.js"></script>
   <title>Premier cours pour comprendre le javascript</title>
 </head>
-<body style="background: #1a1a1a; color: #fff">
-  <header style="font-size: 34px; text-align: center;"> Hubpage</header>
-  <div id="content">
-    <p> <h3>Js Actions</h3>
-      <button onclick="simpleAlert()">Click for first statement --> Alert</button> <br>
-      <button onclick="simpleParsing()">Click for second statement --> prompt & parsing</button>
-    </p>
-    <p> <h3>Page links</h3>
-
-    </p>
+<body class="dark-bg" onload="writeValue(getCookie('linkBehaviour'), 'link-behaviour')">
+  <div class="wrap">
+    <header class="float-center">NSI Hubpage</header>
   </div>
+  <div id="content">
+    <div class="warp">
+      <div class="float-left">
+        <p>
+          <h3>Js Actions</h3>
+          <button onclick="simpleAlert()">Click for first statement --> Alert</button> <br>
+          <button onclick="simpleParsing()">Click for second statement --> prompt & parsing</button>
+        </p>
+        <div id="docs-access">
+          <h3>Js Class</h3>
+          <a href="#" onclick="openLink('pages/class/cours-javascript.html')"> Open Js Lesson</a>
+        </div>
+      </div>
+      <div class="float-right">
+        <p>
+          <h3>Options</h3>
+          <div>
+            link will open in <txt id="link-behaviour"></txt> tab.
+          </div>
+          <button onclick="toggleLinksBehaviour()">Change Opening links</button>
+        </p>
+        <p>
+          <h3>Page links</h3>
+          - <a href="#" onclick="openLink('pages/js-exercise-2.html')">Exercice 2</a> <br>
+          - <a href="#" onclick="openLink('pages/js-exercise-4.html')">Exercice 4</a> <br>
+          - <a href="#" onclick="openLink('pages/js-exercise-5.html')">Exercice 5</a> <br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>Copyright (c) 2O21 Centaurus - Some rights reserved<div class="warp"><div class="float-left"><a href="/index.html">Home</a><br><a href="/about.html">About</a></div><div class="float-right"><a href="https://www.gitlab.com/CentaurusDJ/import-cours/">Repository link</a></div></div></footer>
 </body>
 </html>

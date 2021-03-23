@@ -1,0 +1,74 @@
+:root {
+  --link-hover: #19d8bf;
+  --transition-delay: 1.5s;
+}
+/*
+  User-defined Elements
+*/
+
+.dark-bg {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+.back-link {
+  font-size: 28px;
+  text-align: left;
+}
+h1, h2, h3, h4, h5, h6, header {
+  user-select: none;
+}
+
+/*
+  DOM Elements
+*/
+html {
+  font-size: 18px;
+}
+header {
+  font-size: 34px; 
+  text-align: center;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-style: oblique;
+  transition: var(--transition-delay);
+}
+a:hover {
+  color: var(--link-hover);
+}
+button {
+  color: #fff;
+  background-color: #1a1a1a;
+  border-color: #19d8bf;
+  border-width: 1px;
+  transition: var(--transition-delay);
+}
+button:hover {
+  box-shadow: 2px 2px 8px 5px #19d8bf;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  user-select: none;
+}
+
+
+/*
+  Floating Spaces
+*/
+.warp {
+  position: relative;
+  margin: 5px;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
