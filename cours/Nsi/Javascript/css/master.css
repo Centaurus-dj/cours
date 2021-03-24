@@ -68,7 +68,9 @@ footer {
 }
 .float-left {
   float: left;
+  max-width: 40%;
 }
 .float-right {
   float: right;
+  max-width: 40%;
 }

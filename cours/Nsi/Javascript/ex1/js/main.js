@@ -119,7 +119,7 @@ function simpleSelection () {
 }
 // Form Example lesson 1
 function simpleFormInteraction () {
-  var response = document.getElementById('responseId').value
+  var response = document.getElementById('responseId').value;
 
   if (response == '1' || response == 'un') {
     document.getElementById('result-area').innerHTML = 'one';
@@ -134,8 +134,76 @@ function simpleFormInteraction () {
   }
 }
 // Exercise 6
-function calculateQcm () {
-  console.log();
+function calculateQcm (divQuest1, divQuest2, divQuest3) {
+  // We proceed to check if all the values are correct for next conditions
+  if (divQuest1.value == undefined) { // The user didn't clicked any buttons
+    alert("Vous n'avez pas choisi une des deux réponse à la question 1.");
+    return; // We stop the function
+  } else if (divQuest3.value == '') { // The user didn't entered anything
+    alert("Vous n'avez pas entré de réponse à la question 3.");
+    return; // We stop the function
+  }
+  if (isNaN(parseInt(divQuest3.value))) { // The user entered a string while we need a number
+    alert("Vous avez entré une chaine de caractère à la question 3 alors qu'il ne faut que des nombres.");
+    return; // We stop the function
+  }
+
+  // Answers picked from the user
+  const valueQuest1 = divQuest1.value;
+  const valueQuest2 = divQuest2.value;
+  const valueQuest3 = parseInt(divQuest3.value);
+
+  // Correct answers of Qcm
+  const trueValueQuest1 = true;
+  const trueValueQuest2 = 'function';
+  const trueValueQuest3 = parseInt((12 - 4) ** 2);
+  const reprTrueValueQuest1 = '"Vrai"';
+  const reprTrueValueQuest2 = '"function"';
+  const reprTrueValueQuest3 = String('"' + parseInt((12 - 4) ** 2) + '"');
+
+  // Function related variables, we'll use them to make statistics and decide whether the user passed the Qcm or not
+  var stats = {
+    "quest1": false,
+    "quest2": false,
+    "quest3": false,
+  };
+
+  // We log the answers given by user and the correct ones in the console | Debug Use, can comment them when not anymore needed
+  console.log('valueQuest1:', valueQuest1, 'trueValueQuest1:', trueValueQuest1);
+  console.log('valueQuest2:', valueQuest2, 'trueValueQuest2:', trueValueQuest2);
+  console.log('valueQuest3:', valueQuest3, 'trueValueQuest3:', trueValueQuest3);
+
+  if (valueQuest1 == trueValueQuest1) {
+    stats.quest1 = true;
+  }
+  if (valueQuest2 == trueValueQuest2) {
+    stats.quest2 = true;
+  }
+  if (valueQuest3 == trueValueQuest3) {
+    stats.quest3 = true;
+  }
+
+  if (stats.quest1 == true && stats.quest2 == true && stats.quest3 == true) {
+    alert('Vous avez réussi le QCM, bravo à vous !');
+  } else {
+    var r = 'Vous avez échoué au QCM:\n';
+    if (stats.quest1 == true) {
+      r += 'Question 1: Vous avez juste \n';
+    } else {
+      r += String('Question 1: Vous avez faux, la réponse était ' + reprTrueValueQuest1) + '\n';
+    }
+    if (stats.quest2 == true) {
+      r += 'Question 2: Vous avez juste \n';
+    } else {
+      r += String('Question 2: Vous avez faux, la réponse était ' + reprTrueValueQuest2 + '\n');
+    }
+    if (stats.quest3 == true) {
+      r += 'Question 3: Vous avez juste \n';
+    } else {
+      r += String('Question 3: Vousd avez faux, la réponse était ' + reprTrueValueQuest3 + '\n');
+    }
+    alert(r);
+  }
 }
 
 // Utils Functions
