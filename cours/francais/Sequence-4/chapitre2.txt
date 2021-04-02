@@ -106,7 +106,7 @@ AIDE: p.526
   Les groupes ont également leurs classes, organisées autour d'un mot-noyau:
     - Le groupe nominal (GN) ne contient pas de verbes et a pour mot-noyau un nom.
     - Le groupe verbal a pour mot-noyau un verbe à l'infinitif ou au participe.
-    - La proposition est porganisée autour d'un verbe conjugué.
+    - La proposition est organisée autour d'un verbe conjugué.
   La fonction grammaticale d'un mot ou d'un groupe est le rôle qu'il joue dans la phrase.
   Elle dépend essentiellement de sa place par rapport aux autres.
   Voir le tableau récapitulatif qui vous a été distribué.

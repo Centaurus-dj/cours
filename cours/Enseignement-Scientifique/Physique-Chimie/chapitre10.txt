@@ -1,0 +1,56 @@
+Chapitre 10: La Terre dans l'Univers
+  p.164
+
+Prérequis 1:
+  a. Voie lactée = galaxie
+  b. Soleil = étoile
+  c. Lune = satellite naturel
+
+Prérequis 2:
+  a. La trajectoire est une courbe appelée cycloïde.
+  b. La trajectoire est un cercle.
+
+Prérequis 4:
+  1/ Un mouvement du Soleil vu de la Terre.
+
+Activité p.166:
+
+  1/
+    Dans le modèle géocentrique, le mouvement de:
+      - la Terre est immobile.
+      - le Soleil est circulaire et uniforme.
+      - la Lune est circulaire et uniforme.
+
+  2/
+    Dans le modèle héliocentrique, le mouvement de:
+      - la Terre est circulaire
+      - le Soleil est immobile
+
+  3/
+    On peut reconcilier les deux conceptions en indiquant que même si la théorie
+    de l'héliocentrisme s'est avérée être plus vraie que celle du géocentrisme.
+    Elles sont toutes les deux un raisonement correct en fonction du point de vue.
+    L'important est de bien préciser le référentiel.
+
+  4/
+    Les astres connus sont Mars, Venus, Jupiter, Neptune.
+    Ils effectuent des "épicycles", des petis cercles autour de leur position moyenne.
+    Les mouvements sont épicycloides, de référentiel géocentrique.
+
+  5/
+    Erasmus Reinhold calcule les positions des différents astres stéllaire
+    et mets en évidence que les positions de ceux-ci, avec le modèle
+    héliocentrique, semblent être plus en rapport avec les relevés faits
+    à l'époque grecque.
+    En se basant dans le référentiel héliocentrique, les mouvements planétaires sont beaucoup
+    plus faciles à étudier.
+
+  6/
+    On mesure une parallaxe en degrés ou des radians.
+    Si la Terre était immobile, la parallaxeaurait une valeur de 0.
+
+  7/
+    Il s'est écoulé 295 ans entre l'écriture du livre de Copernic et
+    l'approbation de la théorie de l'héliocentrisme.
+    L'événement décisif a été la contribution de Friedrich Bessel
+    avec le calcul de la parallaxe de l'étoile 61 du cycgne.

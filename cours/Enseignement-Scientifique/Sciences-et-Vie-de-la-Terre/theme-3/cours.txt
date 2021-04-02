@@ -5,8 +5,22 @@ Thème 3: La Terre: un astre singulier
   Recherches:
     1er à se demander l'âge de la Terre: Ussher
     Qui ? Quand ? Quoi ?:
-      - Ussher --> 17° siècle, archbishop, Ussher Chronology: histoire de la Terre d'après l'ancien testament.
-      - Buffon -->
-      - Képler -->
-      - John Philipps (géologue) -->
-      - Léonard de Vinci -->
+      - Ussher --> 17° siècle, archbishop, Chronologie d'Ussher: histoire de la Terre d'après l'ancien testament.
+      - Buffon --> 18° siècle, scientifique français, Hypothèse création de la Terre: Comète collision Soleil -> éjection de matières et solidification en Terre.
+      - Képler --> 17°siècle, scientifique: astronome, etc., Mouvement des planètes
+      - John Philipps (géologue) --> 19° siècle, scientifique, étude des roches
+      - Léonard de Vinci --> 16° siècle, touche à tout scientifique, ?
+
+  Prérequis p.150:
+    Terre:
+      - est dans la zone d'habitation du système solaire
+      - a une composition atmosphérique favorable au développement d'être vivants
+
+    Sédiments:
+      - Sont transportés principalement par les courants marins, ruissaux, rivières, fleuves.
+
+    Big Bang:
+      Le Big Bang a eu lieu il y a 13.7 Ma.
+
+    Désintégration radioactive:
+      Oui, car en fonction de leur quantité au sein d'un objet géologique l'on peut déterminer l'âge de l'objet.

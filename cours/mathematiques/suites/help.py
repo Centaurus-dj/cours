@@ -1,4 +1,9 @@
+def myFunction(n: int) -> int:
+  u = 50
+  for i in range(0, n):
+    u = (-0.5*u)+5
+  print("u:", u)
+  return u
 
-### Re write exercise "suite"
-def CalculateSequences(base, explicit_method, times):
-  pass
+if __name__ == "__main__":
+  myFunction(int(input("Donnez n: ")))

@@ -1,19 +1,19 @@
 // Hub Functions
-function toggleLinksBehaviour () {
+function toggleLinksBehaviour () { // Toggle document cookie for the behaviour of opening a link in site
   if (getCookie('link') == 'new') {
-    setCookie('link', 'current', 365);
+    setCookie('link', 'current', 365); // Toggle to current tab for opening a link
   } else if (getCookie('link') == 'current') {
-    setCookie('link', 'new', 365);
+    setCookie('link', 'new', 365); //  Toggle to new tab for opening a link
   }
-  writeValue(getCookie('link'), 'link-behaviour');
+  writeValue(getCookie('link'), 'link-behaviour'); // Create output of changement
 }
 // Exercises Functions
 // Example lesson 1
-function simpleAlert () {
+function simpleAlert () { // Is ther really any use of writing anything?
   alert('Bonjour à la classe de première NSI');
 }
 // Exercise 1
-function simpleParsing () {
+function simpleParsing () { // We parse floats, really easy, not needed to be commented
   var a = parseFloat(prompt('Donnez un nombre'));
   var b = parseFloat(prompt('Donnez un autre nombre'));
   var produit = a * b;
@@ -28,87 +28,87 @@ function simpleParsing () {
 }
 // Exercise 2 
 function pythagoreFunc (input1Id, input2Id) {
-  var ab = parseFloat(document.getElementById(input1Id).value);
-  var ac = parseFloat(document.getElementById(input2Id).value);
-  var bcSquare = ab ** 2 + ac ** 2;
-  var bc = Math.sqrt(ab ** 2 + ac ** 2);
+  var ab = parseFloat(document.getElementById(input1Id).value); // ab given value
+  var ac = parseFloat(document.getElementById(input2Id).value); // ac given value
+  var bcSquare = ab ** 2 + ac ** 2; // Squared bc value
+  var bc = Math.sqrt(ab ** 2 + ac ** 2); // Squared root value of Squared bc
 
-  console.log(ab, ac);
-  console.log(bcSquare + ' = ' + bc);
-  return bc;
+  console.log(ab, ac); // Debug use, can comment after not needed anymore
+  console.log(bcSquare + ' = ' + bc); // Debug use, can comment after not needed anymore
+  return bc; // return bc value
 }
 // Exercise 4
-function guessNumber () {
-  var guessValue = window.guessValue;
-  var input = document.getElementById('guess-input').value;
-  console.log('Value to guess:', guessValue);
-  var body = document.getElementById('return-info');
+function guessNumber () { // TODO: Create version for when DOM elem not present in document
+  var guessValue = window.guessValue; // get value the user will need to guess
+  var input = document.getElementById('guess-input').value; // get value the user entered
+  console.log('Value to guess:', guessValue); // Debug use, can comment after not needed anymore
+  var body = document.getElementById('return-info'); // get document DOM element for printing output
   if (input != '') {
-    if (input > guessValue) {
+    if (input > guessValue) { // when it's greater than the value to guess
       body.innerText = 'The number to guess is less than ' + input + ' (entered: ' + input + ')';
-    } else if (input < guessValue) {
+    } else if (input < guessValue) { // when it's lesser than the value to guess
       body.innerText = 'The number to guess is greater than ' + input + ' (entered: ' + input + ')';
-    } else {
+    } else { // when it's the value to guess
       body.innerText = 'The number to guess is exactly ' + guessValue + ' (entered: ' + input + ')';
     }
-  } else {
+  } else { // when user didn't entered anything
     body.innerText = 'You haven\'t entered a guess';
   }
   console.log('return-info:', body.innerText);
   console.log('input-value:', input);
 }
-function changeGuessNumber () {
-  window.guessValue = Math.floor(Math.random() * 20);
-  console.clear();
-  console.log("New Value to guess:", window.guessValue);
-  document.getElementById('guess-input').value = '';
-  guessNumber();
+function changeGuessNumber () { // We reset the Value of the number to guess, helps to continue to use the feature
+  window.guessValue = Math.floor(Math.random() * 20); // while not needed to refresh the page
+  console.clear(); // clear console for more readibility
+  console.log("New Value to guess:", window.guessValue); // Debug use, can comment after not needed anymore
+  document.getElementById('guess-input').value = ''; // Reset value input
+  guessNumber(); // Call guessNumber() function to reset output
 }
 // Exercise 5
 function checkStringAppearence (stringToSearch, searchString) {
-  console.log('In', '"' + searchString + '"', 'we search', '"' + stringToSearch + '"');
-  var body = document.getElementById('result-check');
-  var x = 0;
+  console.log('In', '"' + searchString + '"', 'we search', '"' + stringToSearch + '"'); // Debug use, can comment after not needed anymore
+  var body = document.getElementById('result-check'); // We get the div where we'll be printing the result
+  var x = 0; // Used to know the exact position of the apparition of the letter researched
   var r = String(stringToSearch + ' found at position: \n');
-  var None = true;
-  for (char of searchString) {
+  var None = true; // Used to know if the string contains the letter we're searching for
+  for (char of searchString) { // For-of loop to test each letter
     x += 1;
     if (char == stringToSearch) {
       None = false;
       console.log('Found:', char, 'at position of index', x, '(' + searchString.charAt(x - 1) + ')');
-      if (body == undefined || body == null) {
+      if (body == undefined || body == null) { // Format returned content for alert statement
         r += String('- ' + (x - 1) + ' in given text. \n');
       }
-      else {
+      else { // FOrmat returned content for HTML div and parsing
         r = r.replace("\n", "<br>");
         r += String('- ' + (x-1) + ' in given text. <br>');
       }
       
     }
   }
-  if (None == true) {
+  if (None == true) { // If the letter we're searching for isn't in the given string
     r = String('In the given text, we can\'t find any ' + stringToSearch + '.');
   }
   console.log(body);
-  if (body == undefined || body == null) {
-    alert(r);
+  if (body == undefined || body == null) { // if div searched is not in the document
+    alert(r); // call an alert statement
   } else {
-    body.innerHTML = r;
+    body.innerHTML = r; // Otherwise write the returned content
   }
 }
 // Example 2 lesson 1
-function simpleJsInteraction (word) {
+function simpleJsInteraction (word) { // Is there really any use of writing anything?
   alert(word + ' Madame ou Monsieur');
 }
 // Example 3 lesson 1
 function changeColour () {
-  var color = document.body.style.backgroundColor;
+  var color = document.body.style.backgroundColor; // get current background colour of document
   if (color == 'rgb(26, 26, 26)' || color == '') {
-    alert('You clicked me! We change the colour to orange.');
-    document.body.style.backgroundColor = 'orange';
+    alert('You clicked me! We change the colour to orange.'); // code of example, can be optimised for smoother experience
+    document.body.style.backgroundColor = 'orange'; // change to orange background colour
   } else {
-    alert('You clicked me! We change the colour to its inital state.');
-    document.body.style.backgroundColor = 'rgb(26, 26, 26)';
+    alert('You clicked me! We change the colour to its inital state.'); // code of example, can be optimised for smoother experience
+    document.body.style.backgroundColor = 'rgb(26, 26, 26)'; // change to default background colour, hexadecimal value: #1a1a1a
   }
 }
 // Example 4 lesson 1
@@ -121,6 +121,7 @@ function simpleSelection () {
 function simpleFormInteraction () {
   var response = document.getElementById('responseId').value;
 
+  // Conditions are doubled for the case of user entering nbr in string and not as integer
   if (response == '1' || response == 'un') {
     document.getElementById('result-area').innerHTML = 'one';
   } else if (response == '2' || response == 'deux') {
@@ -207,10 +208,10 @@ function calculateQcm (divQuest1, divQuest2, divQuest3) {
 }
 
 // Utils Functions
-function getIdInputValue (inputId) {
+function getIdInputValue (inputId) { // Function to ease picking value of any input
   return document.getElementById(inputId).value;
 }
-function writeValue (variable, elemId) {
+function writeValue (variable, elemId) { // Function to write any value in an HTML element
   var body = document.getElementById(elemId);
   if (body == null) {
     console.error("Can't write in null data");
@@ -218,7 +219,7 @@ function writeValue (variable, elemId) {
     body.innerText = variable;
   }
 }
-function openLink (link) {
+function openLink (link) { // Function to control link openning behaviour
   value = getCookie('link');
   if (value == 'new') {
     window.open(link, '_blank');

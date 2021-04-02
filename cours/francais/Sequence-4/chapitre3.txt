@@ -14,9 +14,9 @@ Chapitre 3: Un autre valet facétieux
       l. 40 à 49: La peur de Rosine.
 
   1/ La première partie: une énigme
-    
+
     a) La curiosité de Rosine
-      Montrez la curiosité et l'espoir de Rosine, en vous appuyant sur les répliques, 
+      Montrez la curiosité et l'espoir de Rosine, en vous appuyant sur les répliques,
       mais aussi sur les didascalies et la ponctuation.
 
       On voit que Rosine est curieuse et a de l'espoir grâce aux didascalies "étourdiment" et "surprise" aux lignes 1 et 11
@@ -43,7 +43,7 @@ Chapitre 3: Un autre valet facétieux
         "L'ennui n'engraisse que les sots" avec un personnification.
           C'est une plaisanterie doublée d'une flatterie à l'adresse de Rosine.
         "Il a un grand défaut"
-          Il s'amuse à inquiéter Rosine sur l'homme qu'elle aime. 
+          Il s'amuse à inquiéter Rosine sur l'homme qu'elle aime.
 
         Il a besoin de travailler
         Jeune bachelier de mes parents
@@ -77,7 +77,41 @@ Chapitre 3: Un autre valet facétieux
       "des mains", "des joues", "des dents", "des yeux" --> Ils ne sont pas accompagnés d'adjectif mais d'un point d'exclamation
         pour indiquer qu'ils sont indescriptibles.
 
+    b) Une révélation progressive
       Lignes 28 à 39: Étudiez la progression de la révélation de Figaro, et montrez que Rosine
       a deviné dès le début, sans vouloir y croire.
 
+      "En ce quartier", "à deux pas de moi", "la pupille de votre tuteur"
+      Figaro ressère progressivement ses révélations sans jamais nommer Rosine.
+      Rosine fait semblant de ne pas comprendre parce qu'elle a peur de cet amour.
+
   3/ La troisième partie: la peur ou la vie
+    a)
+      Comment Rosine exprime-t-elle sa peur ? Pourquooi est-elle si effrayée ?
+
+      Rosine exprime explicitement sa peur: "Vous me faites trembler".
+      Elle dit aussi explicitement qu'elle ne veut pas le croire car elle a peur. (l. 40)
+      l. 46: Elle est prête à renoncer à son amour par peur.
+      La ponctuation renforce la peur.
+
+    b) Les encouragements de Figaro
+      Comment Figaor réveille-t-il le courage de Rosine ?
+      Quelle promesse lui fait-il ? Étudiez deux jeux de mots qui montrent qu'il rest facétieux.
+
+      Figaro encourage Rosine par de nouvelles plaisanteries mais qui ont un sens très fort.
+      "la peur du mal" = la peur de ce qui pourrait arriver
+      "le mal de la peur" = la peur d'avoir peur
+
+      De même lignes 6, 7 et 49, Figaro prévient Rosine que si elle tient à sa tranquilité alors elle renonce à l'amour.
+      Les calculs sont un plaisanteries car ils ne se calculent pas mais Rosine dit qqch de sérieux.
+
+
+  Conclusion:
+    Quelles ressemblances et quelles différences voyez-vous entre cet extrait et la scène I, 14 des `Fausses confidences` ?
+
+      Dans cette scène comme dans la scène I, 14 des `Fausses confidences`, un maitre a chargé son valet de faire connaitre son amour à une jeune fille.
+      Les deux personnages, Dubois et Figaro sont facétieux, Figaro est encore plus facétieux que Dubois car à la Révolution Française
+      Figaro est devenu l'homme du peuple qui défie l'aristocratie.
+
+      Par contre, le but des maitres n'est pas le même: le comte est sincèrement amoureux de Rosine.
+      D'autre part, Rosine ment presque autant que Figaro.

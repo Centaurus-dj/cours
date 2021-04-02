@@ -34,3 +34,246 @@ Activité:
       Total 113700      113546.18
 
       Entre 2015 et 2020 Alice gagne plus d'argent.
+
+75 p.36:
+  4.
+    20000*4 = 80000
+    80000*0.786[n] <= 32 000
+
+    Dans f(x) on entre 80000*0.786[x]
+    puis on affiche une table de valeurs.
+
+    Au bout de 4 compressions, on pourra stocker les 20 000 photos sur la clé USB.
+
+ex. 27 p.31:
+  1/2/4
+
+  1.
+    u{n} =  7n-3
+    u{0} =  7*0-3 = -3
+    u{1} =  4
+    u{2} =  7*2-3 = 11 --> Elle semble arithmétique de raison +7 avec u{0} = 3.
+
+    u{n+1}-u{n} = 7(n+1)-3 - (7n-3)
+                = 7n+7-3 -7n+3
+                = 7n+7 - 7n
+                = +7
+
+  2.
+    u{n} = n²+4
+    u{0} = 4
+    u{1} = 5
+    u{2} = 8
+    Elle n'est pas arithmétique car la raison de u{0}+1 = u{1} alors u{1}+3 = u{2}.
+
+  4.
+    u{1} = -3
+    u{n+1} = u{n} + n + 9
+
+    u {2} = -3+1+9
+          = 7
+    u{3} = 7 + 2 +9
+         = 18
+
+    u{1}+10 = u{2}
+    u{2}+11 = u{3} Donc u{n} n'est pas arithmétique.
+
+ex. 30 p.31:
+
+  1.
+    v{n} = 8**n
+    v{0} = 1
+    v{1} = 8
+    v{2} = 64
+
+    Elle semble géométrique avec une raison q=8.
+
+    v{n+1} = 8**n+1 = 8**n * 8**1 = v{n}*8
+
+    Donc la suite est géométrique avec une raison q=8 et v{0}=1
+
+  2.
+    v{n} = n**4
+    v{0} = 0
+    v{1} = 1
+
+    Il est impossible de passer de v{0} à v{1} en multipliant par un nombre donc v{n} n'est pas géométrique.
+
+  4.
+    v{n} = -5*2**n+1
+    v{0} = -10
+    v{1} = -20
+    v{2} = -40
+
+    Elle semble géométrique de raison q=2
+    v{n+1} = -5 * 2**n+1+1 = 5 * 2**n+1 *2**1
+           = v{n}*2
+    Donc v{n} est géométrique de raison q=2 et avec v{0}=-10
+
+ex 55 p.34:
+
+  1.
+    u{n} = n+5 / n+1
+    u{0} = 5
+    u{1} = 3
+    u{2} = 7/3
+
+    Elle n'est pas arithmétique
+  2.
+    u{n} = -3n+5 / 8
+    u{0} = 5/8
+    u{1} = 2/8
+    u{2} = -1/8
+
+    Elle semble arithmétique de raison -3
+    u{n+1} = -3(n+1)+5 / 8
+    u{n+1} - u{n} = (-3(n+1)+5 /8) - (-3n+5 /8)
+                  = (-3n-3+5 /8) - (-3n+5 /8) = (-3n+2 /8) - (-3n+5 /8)
+                  = -3/8
+
+  3.
+    u{n} = n²+4n+3 / n+3
+    u{0} = 3/3 = 1
+    u{1} = 8/4 = 2
+    u{2} = 15/5 = 3
+
+    Elle semble arithmétique de raison 1
+    u[n+1] - u[n] =  ...
+                  = (n²+6n+8 /n+4) - (n²+4n+3 / n+3)
+                  = ((n²+6n+8)(n+3) - (n²+4n+3)(n+4)) /(n+4)(n+3)
+                  = n³+3n²+6n²+18n+8n+24-n³-4n²-4n²-16n-3n-12 /n²+3n+4n+12
+                  = n²+7n+12 / n²+7n+12
+                  = 1
+  4.
+    u{n} = n²+1 / n+2
+    u{0} = 1/2
+    u{1} = 2/3
+    u{2} = 5/4
+
+    Elle n'est pas arithmétique
+
+ex 60 p.34:
+  (u{0}+u{n}*n) /2
+  calculer les sommes suivantes:
+    1.
+      S = 1 + ... + 73
+        = (1+73)*73 /2
+        = 2701
+    2.
+      T = 1 + 4 + 7 + ... + 40
+        = (1+14)*40 /2
+        = 820
+    3.
+      U = 71 + ... + 100
+        = (71+100)*29 /2
+        = 4959/2
+    4.
+      V = 2 + ... + 50
+        = (2+50)*48 /2
+        = 1248
+
+ex 61 p.35
+
+  1.
+    b) T = 6*(4+19 /2) = 69
+
+ex 72 p.36:
+
+  1.
+    Dans [f(x)] on entre: 4**x et on affiche la table de valeurs: on trouve 4**9 = 262 144
+
+  2.
+    u[0] = 1
+    q = -2
+  3.
+    u[0] = 9
+    q = 1/3
+  4.
+    u[0] = 1
+    q = 0.5
+
+
+ex 73 p.36:
+
+  1.
+    a) 1+ (1 - 2**16) /1-2
+
+Exercice 1:
+
+  1.
+    u[n]  = (7/2)n + 23/8
+    u[0]  = 23/8
+    u[1]  = 7/2 + 23/8
+          = 7*4/2*4 + 23/8
+          = 28/8 + 23/8 = 51/8
+    u[2]  = 7 + 23/8
+
+    Elle semble arithmétique de raison r=7/2
+
+    u[n+1] = 7/2(n+1) + 23/8
+    u[n+1] - u[n] = (7/2(n+1) + 23/8) - ((7/2)n + 23/8)
+                  = (7/2)n + 7/2 + 23/8 - (7/2)n - 23/8
+                  = 7/2
+
+  2.
+    v[n]  = 5*(1/2)**n
+    v[0]  = 5*1 = 5
+    v[1]  = 5*1/2 = 2.5
+    v[2]  = 5*1/4 = 1.25
+
+    Elle semble géométrique de raison q=1/2
+
+    v[n+1]  = 5*(1/2)**(n+1)
+            = 5* ((1/2)**n * (1/2)**1)
+
+    v[n+1] = v[n]*q
+    Donc la suite est géométrique.
+
+Exercice 2:
+
+  1.
+    réponse(s) correcte: [b.] car 2²/2² = 1
+  2.
+    réponse(s) correcte: [b. et d.] car v[0]+0 = 3 et v[1]+1 = 4
+  3.
+    réponse(s) correcte: [b.]
+  4.
+    u[26] = -3 + 26*5
+          = 130
+
+    sigma = 27 * (-3+130 /2)
+          = 27*63.5
+          = 1714.5
+
+
+    réponse(s) correcte: [c.] car u[0]=-3 et r=5
+
+  5.
+    v[10] = 7 * 4**10
+          = 7 * 1 048 576
+          = 7 340 032
+
+    sigma = 11 * (7+7 340 032 /2)
+          = 11 * 3670019.5
+          = 40 370 214.5
+
+    réponse(s) correcte: [a., b.] car 4 --> 9 =+5 donc q*5 pour v[4] --> v[9]
+    aussi car q=4 et que v[n+1] = v[n]*q
+
+  6.
+    réponse(s) correcte: [a., b.] car (a et b --> log Python, fichier: help.py | myFunction())
+    et la suite est arithmétiquo-géométrique.
+    u[n+1] = -0.5u[0] + 5
+
+Exercice 3:
+  u[0] = 200
+  u[n] = u[0] + 5
+  v[n] = u[0] * (0.02 * u[0])
+
+  1.
+    u[2]  = 200 + 5*2
+          = 200 + 10 = 210
+    u[3]  = 200 + 5*3
+          = 200 + 15 = 215
+    v[2]  = 200* (0.02 * u[0] * 2)
+    v[3]  =
