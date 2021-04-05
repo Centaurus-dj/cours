@@ -18,7 +18,7 @@
 				"console": "integratedTerminal",
 			},
 			{
-				"name": "Attach debug file",
+				"name": "Attach debug file on Chrome Debug",
 				"type": "chrome",
 				"request": "attach",
 				"port": 9222,
