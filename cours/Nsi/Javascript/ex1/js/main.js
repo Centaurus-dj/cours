@@ -285,8 +285,8 @@ function drawTriangle (ab, ac, bc, drawingSpaceId) {
   console.log('ab:', ab);
   console.log('ac:', ac);
   console.log('bc:', bc);
-  
-  
+
+
   // Clean the drawing space
   ctx.clearRect(0, 0, drawingSpace.width, drawingSpace.height);
 
@@ -305,7 +305,7 @@ function drawTriangle (ab, ac, bc, drawingSpaceId) {
   ctx.lineTo(coordsAx, coordsAy);
   ctx.stroke();
   ctx.closePath();
-  
+
   // Draw data about segments
   ctx.font = "20px Georgia";
   ctx.fillStyle = "white";

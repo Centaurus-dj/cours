@@ -2,18 +2,20 @@ var http = require("http"),
   url = require("url"),
   path = require("path"),
   fs = require("fs"),
+  sphp = require('sphp');
 port = process.argv[2] || 3000;
 
 http.createServer(function (request, response) {
 
-  var uri = url.parse(request.url).pathname, 
+  var uri = url.parse(request.url).pathname,
     filename = path.join(process.cwd(), uri);
 
   var contentTypesByExtension = {
     '.html': "text/html",
     '.css': "text/css",
     '.js': "text/javascript",
-    '.pdf': "bin/pdf"
+    '.pdf': "application/pdf",
+    '.php': "text/php",
   };
 
   console.log("serving:", filename);
@@ -38,7 +40,7 @@ http.createServer(function (request, response) {
 
       var headers = {};
       var contentType = contentTypesByExtension[path.extname(filename)];
-      console.log('content', contentTypesByExtension[path.extname(filename)]);
+      console.log('content:', contentTypesByExtension[path.extname(filename)]);
       if (contentType) headers["Content-Type"] = contentType;
       response.writeHead(200, headers);
       response.write(file, "binary");
