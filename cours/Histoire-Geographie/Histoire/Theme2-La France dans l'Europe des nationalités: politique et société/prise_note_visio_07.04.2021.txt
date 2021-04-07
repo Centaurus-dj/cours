@@ -1,0 +1,224 @@
+//////////////////////////////////////////////////////////////////////////////
+///                                                                        ///
+///     Les paranthèses commençant avec "(~" sont des commentaires         ///
+///     laissés par moi où j'ai eu des doutes à moment de la réécriture    ///
+///                                                                        ///
+//////////////////////////////////////////////////////////////////////////////
+
+Des bassins industriels vont se former, les usines vont principalement s'implanter aux endroits où il y a du charbon.
+
+B - L'accélération de l'industrialisation en France sous le 2nd Empire
+	B1 - Une politique économique au service des investissements et du patronat
+		- L'influence du saint-simonisme (Le comte de Saint-Simon, 1760-1825)
+			Il est un philosophe et communiste.
+			Il a écrit avant la révolution française.
+			Il considère que les patrons et ouvriers appartiennent à la même classe sociale.
+			Les riches (aristocrate) sont des parasites, il considère que tous les travailleurs sont actifs et donc porfitent au système.
+			Les élites (patrons, les plus cultivés) doivent diriger, pour le bien de la société les travailleurs doivent obéir au patron.
+			Patronnat = partie de la société (comme locomotive) qui tire la société vers le haut (~pas sûr de cette phrase)
+            Il dit qu'il faut donner le maximum de pouvoir aux partons --> grâce à l'activité des partons les travailleurs seront heureux.
+            Il va y avoir des patrons paternalistes (paternels) qui vont essayer d'avoir un mieux être pour leur travailleurs.
+
+            C'est une pensée économique.
+		
+		- Un exemple: l'ascension des frères Pereire (PPO)
+			Les frères Pereire sont des entrepreneurs qui touchent à tout. (Banquiers, promoteurs immobiliers, chemins de fer, agriculture, industrie, stations balnéaires, etc..)
+			
+            Activités banquaires:
+				- Création du crédit mobilier: L'épargne du client est réinvestie dans l'industrie
+				    C'est un parit, durant quinzaine d'années ça va énormément fonctionner.
+				
+                - 1867: Le crédit immobilier fait faillite --> c'est la fin de l'âge d'or des frères pérères.
+
+                Pratiques banquaires contestable (pas très nettes).
+
+            --> Ils vont devenir une grande figure du Second Empire.
+			--> Ils vont devenir des proches de Napoléon III.
+
+            Ils sont symboliques de l'envie de faire de l'argent durant le 2nd Empire. (~pas confiant sur le sens formulé par la phrase)
+		
+	B2 - Le développement de secteurs industriels moteurs
+		La croissance économique est forte durant tout le 2nd empire.
+		
+		- L'extension du réseau de chemins de fer
+			Il est essentiel à l'économie, tant qu'il se développe on peut construire des usines où il n'y a pas de charbon.
+            |-> Transort de matériaux dont le charbon, essentiel au fonctionnement des usines.
+			En 20 ans, le réseau de chemins de fer est multiplié par 5.
+
+		- Le développement de la métallurgie et de la sidérurgie
+			Sidérurgie  = production de l'acier
+			Métallurgie = production de métal
+
+			Production de Fonte             --> multiplié par 2 en 5ans
+			Production de Fer et d'Acier    --> multiplié par 3 en 5ans
+			Fonte et Acier                  --> matériaux essentiels
+			Procédé Bessemer                --> permet de produire de l'acier liquide, inventé en 1855
+			Pour de l'acier étant le produit du procédé Bessemer on parlera d'acier Bessemer.
+
+		- Le développement de l'industrie textile
+			Bonne partie du textile produit à la main par les femmes (les tisseuses) à la campagne. --> un produit artisanale.
+			On passe d'une production artisanale à une production avec des machines (~pas très sûr de cette phrase)
+			On arrive aussi dans une phase d'exode rurale.
+			On peut y considérer comme le vrai début de l'industrialisation en France
+
+C - L'entré dans la modernité
+	C1 - L'ouverture économique
+		- L'exposition Universelle de 1855 à Paris
+			1re exposition en 1851 à Londres
+			L'exposition Universelle est un évenement où l'on expose diverses choses.
+			Il y a des machines, des productions, horticultures, produits chinois, beaux arts.
+			
+			C'est l'occasion d'acceuillir des personnes du monde entier.
+
+            Statistiques:
+    			- 14 000 exposants
+			    - 5 millions de visiteurs
+            
+            Anécdote: La reine d'Angleterre est venu à Paris voir l'exposition Universelle.
+
+			On va construire un palais, le Palais de l'Industrie (il n'existe plus aujourd'hui car détruit).
+			C'est l'occasion pour Naopléon 3 de se montre comme un grand chef européen, de s'affirmer.
+
+			Ce qui y est exposé:
+				- Machine à coudre Singer (= marque française, toujours existante), une des premières machines à coudres.
+				- Machine pour faire couler le café
+
+		- L'exposition Universelle de 1867 à Paris
+			Apogée du Saint-Simmonisme.
+			Se passe au niveau du Champ de mars
+			
+			A retenir:
+				- Présentation pour la 1re fois de l'Aluminium
+				- Ingénieurs montre que le pétrole est un combustible intéréssant à l'avenir. (Apparement, ils avaient pas totalement tort)
+				- 50 000 exposants
+				- 10 millions de visiteurs
+
+		- Rappel: le traité de libre-échange de 1860 (voir ch.H2.1)
+			Traité de commerce avec l'Angleterre où ils s'engagent à baiser voir supprimer les droits de douanes dans les deux pays.
+
+	c2 - Les transformations de Paris: les travaux d'Haussmann
+		- Pourquoi transformer Paris ?
+			Les travaux deviennent presque urgents.
+			L'évolution de la population Parisienne --> elle est constante.
+			Le paysage de Paris est encore dans son schéma (plan) médiévale, batiments presque insalubres, rues veillement pavées.
+			Elle est une ville médiévale au 19ème siècle qui est confronté à un grand afflu de population.
+			
+            Butte Montmartre en 1850 --> quasiment la campagne avec des cabanes.
+			Les rues de Paris sont des rues dangereuses, elles n'ont pas d'éclairages.
+			Pauvreté des habitants, délabrement des rues --> conditions assez dramatiques.
+			Paris sombre, malsain, insalubre, dangereux --> raisons.
+		
+		- La mise en place du chantier par Napoléon III et le baron Haussman
+			Figure importante: Baron Haussman
+			Il va durer 17 ans (1853 à 1870).
+
+		- Les objectifs de Haussman:
+			(Texte de Théophile Gautier, 1855)
+				Métaphores sur la santé
+			
+			- Aérer:
+				Plan de la vaille simple
+					- 3 cercle concentriques
+					- Axes perpendicvulaires (Nord, Sud, Est, Ouest)
+				L'île de la Cité avant les travaux:
+					Petites ruelles pas très droites
+				L'île de la Cité après les travaux:
+					Petites ruelles sont rasées
+					Raser habitations
+				On rase tout pour mieux reconstruire.				
+
+				- Grandes percées haussmanniennes
+					Boulevard important: Boulevard Sébastopol
+				- Aménagement de nopmbreux espaces verts (bois et squares)
+					2 grands bois de chaques cotés (Est et Ouest) de Paris.
+					innombrables squares
+					Importante reflexion sur l'hygiène dans la vie quotidienne.
+			
+			- Circuler et contrôler:
+				- Implantation de nouvelles gares
+				- Grandes percées facilitant l'accès au centre... et les interventions militaires en cas de révolte.
+					C'est beaucoup plus compliqué de créer et maintenir des barricades pour mener des révolutions quand la rue est grande.
+
+			- Equiper et assainir:
+				- 2clairage public (réverbères...)
+					Installation de réverbères dans les rues de Paris
+
+				- Nouveau réseau de canalisations d'eau, égouts
+					Il va créer un double réseau (eau potable séparé des eaux usées)
+
+				- Construction des Halles...
+					Grand batiments où chaque matin des producteurs veinnent vendre leurs produits pour ravitailler Paris.
+					Les Halles n'existent plus aujourd'hui mais un quartier s'apelle toujours le quartier des Halles.
+					Un bon exemple de ces halles sont les Halles Baltard.
+
+			- Embellir:
+				- Mobilier urbain
+					Fontaines, Kiosques, colonne Morris, urinoires
+
+				- Règles de construction pour les nouveaux immeubles
+					- Des règles de construction précises pour créer un ensemble architectural cohérent (matériau utilisé, hauteur..)
+						Chaque immeuble doit prendre la même couleur de façade que le premier de sa rue.
+						On va reprendre le modèle de la rue Rivoli.
+						3 types différents --> 1re classe, 2ème classe et 3ème classe
+						2 étages nobles, étage 2 et 5 (ou 4, ça peut varier) --> grande hauteur de plafond et balcons filés(= balcon continu)
+						Dernière étage --> chambres données aux domestiques
+						Toit inclinés pour laisser le soleil éclairer le 5ème étage de l'immeuble d'en face (étage de noble, voyez-vous).
+						Tout est très homogène.
+						Chaque étage correspond à une classe sociale.
+						Séparation physique entre les bourgeois et les domestiques. Exemple: 1 escalier pour les bourgeois séparé de l'escalier utilisé par les domestiques, conierges, etc...
+				
+				Paris se dotte de monuments ou mets en valeurs ceux déjà existents
+
+			Total de l'haussmanisation:
+				- 17 ans de travaux
+				- 40 000 immeubles construits
+				- 20 000 maisons détruites
+				- 600 km d'égouts construits
+				- 80 000 ouvriers mobilisés
+
+	C3 - La naissance des grands magasins: l'exemple du "Bon Marché"
+		Dossier livre "Au bon Marché" p.104
+		Consigne: Relever dans le dossier documentaire les éléments et aménagements permettant de stimuler la consommation
+
+		Le première élément est l'architecture, le constructeur du magasin fait attention à l'architecture extérieure prestigieuse
+		- beaucoup de choix
+
+		- accumulation d'objets sur le trottoir pour donner envie d'entrer
+
+		- livraison à domicile --> "Bon Marché" est le premier à le faire.
+
+		- architecture intérieure de prestige pour attirer les clients
+			On entre pour voir les articles mais aussi l'architecture, l'intérieur.
+
+		- de nouvelles méthodes commerciales
+			Important: Aristide Boucicaut, fondateur du "Bon Marché"
+			
+            - Création de ventes privées
+
+			- Création de la notion de "satisfait ou remboursé"
+                On permet l'échange ou remboursement d'un produit.
+
+			- Soldes
+                On baisse le prix de l'ancienne collection avant la sortie de la nouvelle.
+
+		- Magasins spécialisés
+
+            Avant, chaque magasin était spécialisé en une catégorie spéciale.
+            Impossible d'avoir des chapeaux et des robes dans le même magasin.
+
+            Ces nouveaux grands magasins créent un nouveau rapport à la marchandise,
+            on peut maintenant avoir plusieurs types de produits dans un même magasin.
+            Il introduit aussi deux choses nouvelles qui sont:
+	    		- Prix affichés
+                    En effet, avant, les prix n'étaient pas fixes et c'était au client
+                    de négocier avec le vendeur afin de se mettre d'accord pour un prix.
+
+                - Droit de tester les produits (non consommables, bien sûr)
+                    En effet, avant, les produits tels que les chapeaux étaient dans la remise
+                    et c'était le gérant qui nous le montrait, pas le droit de l'essayer.
+                    Maintenant, on peut. 
+
+        De nouveaux magasins comme:
+			- Galeries LAFAYETTE
+			- PRINTEMPS
+			- SAMARITAINE
