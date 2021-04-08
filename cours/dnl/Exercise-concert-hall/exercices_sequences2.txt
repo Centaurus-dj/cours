@@ -1,0 +1,22 @@
+1)
+  It's an arithmetic sequence with a common difference of 1.
+2)
+  u[n] = u[0] + 1*n
+
+3)
+  u[10] = u[0] + 1*10
+        = 25 + 10
+        = 35
+
+  The 1st row where they can all sit in the same row is the 11th row.
+
+4)
+  u[31] = u[0] + 1*31
+        = 25 + 31
+        = 56
+
+  Sigma = 32 * ((u[0] + u[31]) /2)
+        = 32 * ((25 + 56) /2)
+        = 1296
+
+  The total number of seats in the concert hall is 1296.
