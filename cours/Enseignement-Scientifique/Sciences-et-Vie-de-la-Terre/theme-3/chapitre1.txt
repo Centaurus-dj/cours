@@ -54,8 +54,9 @@ Thème 3: La Terre: un astre singulier
 
       |-> y = ax+b
           a = coefficient directeur
-          (y[b] - y[a]) / (x[b] - x[a]) = a
+          a = (y[b] - y[a]) / (x[b] - x[a])
           Points:
-            A (39/0.5)
-            B (196/2.0)
-            a =
+            A (39; 0.5)
+            B (196; 2.0)
+            a = (196 - 39) / (2 - 0.5)
+              = 157 / 1.5
