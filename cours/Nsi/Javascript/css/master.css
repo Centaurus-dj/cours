@@ -14,8 +14,21 @@
   font-size: 28px;
   text-align: left;
 }
-h1, h2, h3, h4, h5, h6, header {
-  user-select: none;
+.left-txt {
+  text-align: left;
+}
+.center-txt {
+  text-align: center;
+}
+.right-txt {
+  text-align: right;
+}
+
+.d-block { /*Display as block*/
+  display: block;
+}
+.d-none { /*Don't display*/
+  display: none;
 }
 
 /*
@@ -57,7 +70,26 @@ footer {
   text-align: center;
   user-select: none;
 }
-
+h1, h2, h3, h4, h5, h6, header {
+  user-select: none;
+}
+input {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #19d8bf;
+  border-width: 1px;
+}
+input:focus {
+  border-color: #19d8bf;
+  border-width: 2px;
+}
+input[type="submit" i] {
+  color: #fff;
+  background-color: #1a1a1a;
+  border-color: #19d8bf;
+  border-width: 1px;
+  transition: var(--transition-delay);
+}
 
 /*
   Floating Spaces
