@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "bin/python",
+    "standard.enable": false
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: Current File",
+        "type": "python",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal",
+      },
+      {
+        "name": "Attach debug file on Chrome Debug",
+        "type": "chrome",
+        "request": "attach",
+        "port": 9222,
+        "url": "http://localhost:3000/",
+        "webRoot": "${workspaceFolder}"
+      },
+    ]
+  },
+}

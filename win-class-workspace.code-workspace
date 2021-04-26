@@ -6,6 +6,8 @@
 	],
 	"settings": {
 		"git.ignoreLimitWarning": true,
+		"python.pythonPath": "C:\\Users\\alexi\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "standard.enable": false
 	},
 	"launch": {
 		"version": "0.2.0",
