@@ -2,10 +2,10 @@ var http = require("http"),
   url = require("url"),
   path = require("path"),
   fs = require("fs"),
-  exec = require("child_process"),
   os = require("os"),
 port = process.argv[2] || 3000;
 
+var { exec } = require("child_process");
 
 http.createServer(function (request, response) {
 
@@ -19,12 +19,23 @@ http.createServer(function (request, response) {
     '.pdf': "application/pdf",
   };
   var serverLanguages = [
-    'php',
+    '.php',
   ];
+
 
   console.log("serving:", filename);
 
   fs.exists(filename, function (exists) {
+
+    function isServerLanguage(extension) {
+    for (var element of serverLanguages) {
+      if (element == extension) {
+        return true;
+      }
+    }
+    return false;
+  }
+
     // If the URL doesn't gives a file
     if (!exists) {
       response.writeHead(404, { "Content-Type": "text/html" });
@@ -45,12 +56,21 @@ http.createServer(function (request, response) {
         return;
       }
 
+
+      var headers = {};
+      var extname = path.extname(filename);
+      var contentType = contentTypesByExtension[extname];
+      console.log('LOG: ' + extname + ", " + isServerLanguage(extname) + ", " + isServerLanguage(".php"));
+
+
       // If file needs to be processed by server then sent to client
-      if (serverLanguages[path.extname(filename)]) {
+      if (isServerLanguage(extname)) {
         console.log('Processing file...');
-        headers["Content-Type"] = contentType;
+        if (contentType) headers["Content-Type"] = contentType;
+
         response.writeHead(200, headers);
         if (os.platform == "win32") { // Script on Windows
+          console.log("LOG: Windows");
           response.write(exec("libs/php/Win_php/php.exe" + filename, (error, stdout, stderr) => {
             if (error) {
                 console.log(`error: ${error.message}`);
@@ -64,7 +84,8 @@ http.createServer(function (request, response) {
           }), "binary");
 
         } else if (os.platform == "linux") { // Script on Linux
-          response.write(exec("libs/php/Linux_php/php" + filename, (error, stdout, stderr) => {
+          console.log("LOG: Linux");
+          exec("libs/php/Linux_php/php " + filename, (error, stdout, stderr) => {
             if (error) {
                 console.log(`error: ${error.message}`);
                 return;
@@ -73,32 +94,17 @@ http.createServer(function (request, response) {
                 console.log(`stderr: ${stderr}`);
                 return;
             }
-            console.log(`stdout: ${stdout}`);
-          }), "binary");
+            response.write(stdout, "binary");
+          });
         }
         response.end();
       } else {
-        console.log('Terminate process, file not taken...');
-        exec("npm stop", (error, stdout, stderr) => {
-          if (error) {
-              console.log(`error: ${error.message}`);
-              return;
-          }
-          if (stderr) {
-              console.log(`stderr: ${stderr}`);
-              return;
-          }
-          console.log(`stdout: ${stdout}`);
-        });
+        console.log('content:', contentTypesByExtension[path.extname(filename)]);
+        if (contentType) headers["Content-Type"] = contentType;
+        response.writeHead(200, headers);
+        response.write(file, "binary");
+        response.end();
       }
-
-      var headers = {};
-      var contentType = contentTypesByExtension[path.extname(filename)];
-      console.log('content:', contentTypesByExtension[path.extname(filename)]);
-      if (contentType) headers["Content-Type"] = contentType;
-      response.writeHead(200, headers);
-      response.write(file, "binary");
-      response.end();
     });
   });
 }).listen(parseInt(port, 10));
