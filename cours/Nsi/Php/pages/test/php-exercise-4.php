@@ -15,15 +15,42 @@
   </div> <br>
   <h1> PHP - Exercice 4 </h1>
   <?php
-  $method = $_GET["method"];
+  function controlSet($var, $type_request) {
+    if ($type_request == "get") {
+      if (isset($_GET[$var])) {
+        return $_GET[$var];
+      } else {
+        return null;
+      }
+    } else if ($type_request == "post") {
+      if (isset($_POST[$var])) {
+        return $_POST[$var];
+      } else {
+        return null;
+      }
+    } else if ($type_request == "both") {
+      if (isset($_GET[$var])) {
+        return $_GET[$var];
+      } else if (isset($_POST[$var])) {
+        return $_POST[$var];
+      } else {
+        return null;
+      }
+    } else {
+      return null;
+    }
+  }
+
+  $method = controlSet("method", "both");
   // GET METHOD
-  $fget = $_GET["nbr"];
-  $sget = $_GET["nbr2"];
-  $oget = $_GET["operation"];
+  $fget = controlSet("nbr", "get");
+  $sget = controlSet("nbr2", "get");
+  $oget = controlSet("operation", "get");
   // POST METHOD
-  $fpost = $_POST["nbr"];
-  $spost = $_POST["nbr2"];
-  $opost = $_POST["operation"];
+  $fpost = controlSet("nbr", "post");
+  $spost = controlSet("nb2", "post");
+  $opost = controlSet("operation", "post");
+
   if ($method == "GET") { //TODO: Work over variables scope to find a way to optimize this.
     if (isset($fget) and isset($sget) and !isset($oget)) {
       $result = $fget + $sget;
@@ -68,7 +95,7 @@
     }
   } else {
     echo "
-      <form action=\"php-exercise-4.php\" method=\"post\">
+      <form action=\"php-exercise-4-part2.php\" method=\"post\">
       <label for=\"nbr\">Nombre n°1:</label>
       <input type=\"text\" name=\"nbr\" value=\"5\" onclick=\"document.getElementsByName('nbr')[0].value = '';\">
       <div> et </div>
