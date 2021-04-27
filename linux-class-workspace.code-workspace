@@ -5,9 +5,27 @@
     }
   ],
   "settings": {
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Palenight Theme",
+    "vscode-office.autoTheme": true,
+    "editor.fontSize": 21,
+    "standard.enable": false,
+
+
+    "liveServer.settings.donotShowInfoMsg": true,
+
+
     "git.ignoreLimitWarning": true,
+
+
     "python.pythonPath": "bin/python",
-    "standard.enable": false
+
+
+    "jshint.lintHTML": true,
+    "jshint.nodePath": "${workspaceFolder}/node_modules/jshint",
+    "jshint.options": {
+      "esversion": 8
+    },
   },
   "launch": {
     "version": "0.2.0",
