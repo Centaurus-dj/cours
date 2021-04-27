@@ -24,11 +24,53 @@
   text-align: right;
 }
 
+.min-txt {
+  font-size: 18px;
+}
+.medium-txt {
+  font-size: 28px;
+}
+.large-txt {
+  font-size: 26px;
+}
+.giant-txt {
+  font-size: 45px;
+}
+.in-txt {
+  font-size: inherit;
+}
+
 .d-block { /*Display as block*/
   display: block;
 }
 .d-none { /*Don't display*/
   display: none;
+}
+
+
+/* The alert message box */
+.alert-box {
+  padding: 20px;
+  background-color: #cf2a1edc; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
 }
 
 /*
@@ -38,7 +80,7 @@ html {
   font-size: 18px;
 }
 header {
-  font-size: 34px; 
+  font-size: 34px;
   text-align: center;
 }
 a {
@@ -56,6 +98,7 @@ button {
   border-color: #19d8bf;
   border-width: 1px;
   transition: var(--transition-delay);
+  font-size: inherit;
 }
 button:hover {
   box-shadow: 2px 2px 8px 5px #19d8bf;
@@ -78,6 +121,8 @@ input {
   color: #fff;
   border-color: #19d8bf;
   border-width: 1px;
+  font-size: inherit;
+  padding: 20px;
 }
 input:focus {
   border-color: #19d8bf;

@@ -11,7 +11,8 @@
 
 <body class="dark-bg">
   <div id="get-back">
-    <a class="back-link" href="../index.php">Return</a>
+    <a class="back-link" href="../index.php">Return to index</a> <br>
+    <a class="back-link" href="php-exercise-4.php">Refresh Page</a>
   </div> <br>
   <h1> PHP - Exercice 4 </h1>
   <?php
@@ -43,13 +44,13 @@
 
   $method = controlSet("method", "both");
   // GET METHOD
-  $fget = controlSet("nbr", "get");
-  $sget = controlSet("nbr2", "get");
-  $oget = controlSet("operation", "get");
+  $fget = controlSet("nbr", "get"); // first with GET
+  $sget = controlSet("nbr2", "get"); // second with GET
+  $oget = controlSet("operation", "get"); // operation with GET
   // POST METHOD
-  $fpost = controlSet("nbr", "post");
-  $spost = controlSet("nb2", "post");
-  $opost = controlSet("operation", "post");
+  $fpost = controlSet("nbr", "post"); // first with POST
+  $spost = controlSet("nbr2", "post"); // second with POST
+  $opost = controlSet("operation", "post"); // operation with POST
 
   if ($method == "GET") { //TODO: Work over variables scope to find a way to optimize this.
     if (isset($fget) and isset($sget) and !isset($oget)) {
@@ -91,20 +92,80 @@
         echo "<p>le quotient de $fpost et $spost est $result</p>";
       }
     } else {
-      echo "<p>Something went wrong, please report this incident.</p>";
+      $is1 = isset($fpost);
+      $is2 = isset($spost);
+      $is3 = isset($opost);
+
+      echo "<p>Something went wrong, please report this incident.</p>
+      <div id=\"php-log\">
+        <txt>tested values:</txt>
+        <ul>
+          <elem>method: $method</elem>
+          <elem>fpost: $fpost</elem>
+          <elem>spost: $spost</elem>
+          <elem>opost: $opost</elem>
+        </ul>
+        <txt>conditions:</txt>
+        <ul>
+          <elem>is1: $is1</elem>
+          <elem>is2: $is2</elem>
+          <elem>is3: $is3</elem>
+        </ul>
+      </div>";
     }
   } else {
-    echo "
-      <form action=\"php-exercise-4-part2.php\" method=\"post\">
-      <label for=\"nbr\">Nombre n°1:</label>
-      <input type=\"text\" name=\"nbr\" value=\"5\" onclick=\"document.getElementsByName('nbr')[0].value = '';\">
-      <div> et </div>
-      <label for=\"nbr2\">Nombre n°2:</label>
-      <input type=\"text\" name=\"nbr2\" value=\"7\" onclick=\"document.getElementsByName('nbr2')[0].value = '';\"> <br>
-      <label for=\"operation\">Opération à éffectuer:</label>
-      <input type=\"text\" name=\"operation\" value=\"+\" onclick=\"document.getElementsByName('operation')[0].value = '';\"><button onclick=\"operations = ['+', '-', '*', '/']; document.getElementsByName('operation')[0].value = operations[Math.floor(Math.random() * operations.length)];\"> Choisir aléatoirement l'opération</button> <br>
-      <input type=\"submit\" value=\"Valider\">
-      </form>";
+    echo '
+    <div id="php-outer-choice-container" class="center-txt medium-txt">
+      <div class="alert-box">
+        <span class="closebtn" onclick="this.parentElement.style.display=\'none\';">&times;</span>
+        The random button for operation may cause unwanted behaviour, please do not use it.
+      </div> <br>
+      <div id="quest-div">Which form to use?</div> <br>
+      <div id="res-div">
+        <div id="post-res">
+          - <a href="javascript:void" onclick="var div1=document.getElementById(\'post-form-container\'); var div2=document.getElementById(\'quest-div\'); var div3=document.getElementById(\'res-div\'); div1.classList.toggle(\'d-none\'); div2.classList.toggle(\'d-none\'); div3.classList.toggle(\'d-none\');">Post form</a>
+        </div>
+        or
+        <div id="get-res">
+          - <a href="javascript:void" onclick="var div1=document.getElementById(\'get-form-container\'); var div2=document.getElementById(\'quest-div\'); var div3=document.getElementById(\'res-div\'); div1.classList.toggle(\'d-none\'); div2.classList.toggle(\'d-none\'); div3.classList.toggle(\'d-none\');">Get form</a>
+        </div>
+      </div>
+      <div id="forms-container">
+        <div id="get-form-container" class="d-none">
+          <form action="php-exercise-4-part2.php" method="get">
+            <label for="nbr">Nombre n°1:</label>
+            <input type="text" name="nbr" value="5" onclick="document.getElementsByName(\'nbr\')[0].value = \'\';">
+            <div> et </div>
+            <label for="nbr2">Nombre n°2:</label>
+            <input type="text" name="nbr2" value="7" onclick="document.getElementsByName(\'nbr2\')[0].value = \'\';"> <br>
+            <label for="operation">Opération à éffectuer:</label>
+            <input type="text" name="operation" value="+" onclick="document.getElementsByName(\'operation\')[0].value = \'\';">
+            <button onclick="operations = [\'+\', \'-\', \'*\', \'/\']; document.getElementsByName(\'operation\')[0].value = operations[Math.floor(Math.random() * operations.length)];"> Choisir aléatoirement l\'opération</button> <br>
+
+            <!-- Hidden input to set the method -->
+            <input type="text" name="method" value="get" class="d-none">
+
+            <input type="submit" value="Valider">
+          </form>
+        </div>
+        <div id="post-form-container" class="d-none">
+          <form action="php-exercise-4-part2.php" method="post">
+            <label for="nbr">Nombre n°1:</label>
+            <input type="text" name="nbr" value="5" onclick="document.getElementsByName(\'nbr\')[1].value = \'\';">
+            <div> et </div>
+            <label for="nbr2">Nombre n°2:</label>
+            <input type="text" name="nbr2" value="7" onclick="document.getElementsByName(\'nbr2\')[1].value = \'\';"> <br>
+            <label for="operation">Opération à éffectuer:</label>
+            <input type="text" name="operation" value="+" onclick="document.getElementsByName(\'operation\')[1].value = \'\';">
+            <button onclick="operations = [\'+\', \'-\', \'*\', \'/\']; document.getElementsByName(\'operation\')[1].value = operations[Math.floor(Math.random() * operations.length)];"> Choisir aléatoirement l\'opération</button> <br>
+            <!-- Hidden input to set the method -->
+            <input type="text" name="method" value="post" class="d-none">
+            <input type="submit" value="Valider">
+          </form>
+        </div>
+      </div>
+    </div>
+    ';
   }
   ?>
 </body>

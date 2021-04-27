@@ -6,7 +6,7 @@
 	],
 	"settings": {
 		"workbench.iconTheme": "material-icon-theme",
-		"workbench.colorTheme": "Slack Theme Aubergine Dark",
+		"workbench.colorTheme": "Horizon Italic",
 		"vscode-office.autoTheme": true,
 		"editor.fontSize": 16,
 
@@ -21,6 +21,7 @@
 		"git.ignoreLimitWarning": true,
 
 		"php.validate.executablePath": "C:\\Users\\alexi\\Documents\\GitHub\\import-cours\\libs\\php\\windows\\php.exe",
+		"phpserver.phpPath": "C:\\Users\\alexi\\Documents\\GitHub\\import-cours\\libs\\php\\windows\\php.exe",
 
 		"python.pythonPath": "C:\\Users\\alexi\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
     "standard.enable": false
