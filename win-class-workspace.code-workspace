@@ -6,20 +6,21 @@
 	],
 	"settings": {
 		"workbench.iconTheme": "material-icon-theme",
-		"workbench.colorTheme": "Panda Syntax",
+		"workbench.colorTheme": "Slack Theme Aubergine Dark",
 		"vscode-office.autoTheme": true,
 		"editor.fontSize": 16,
 
 		"liveServer.settings.donotShowInfoMsg": true,
 
 		"jshint.lintHTML": true,
-		"jshint.nodePath": "${workspaceFolder}/node_modules/jshint",
+		"jshint.nodePath": "node_modules/jshint",
 		"jshint.options": {
 			"esversion": 6
 		},
 
 		"git.ignoreLimitWarning": true,
 
+		"php.validate.executablePath": "C:\\Users\\alexi\\Documents\\GitHub\\import-cours\\libs\\php\\windows\\php.exe",
 
 		"python.pythonPath": "C:\\Users\\alexi\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
     "standard.enable": false
