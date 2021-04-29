@@ -22,6 +22,7 @@
 
 		"php.validate.executablePath": "C:\\Users\\alexi\\Documents\\GitHub\\import-cours\\libs\\php\\windows\\php.exe",
 		"phpserver.phpPath": "C:\\Users\\alexi\\Documents\\GitHub\\import-cours\\libs\\php\\windows\\php.exe",
+		"phpserver.browser": "C:\\Users\\alexi\\Documents\\GitHub\\import-cours\\libs\\browser\\chrome\\chrome.exe",
 
 		"python.pythonPath": "C:\\Users\\alexi\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
     "standard.enable": false
