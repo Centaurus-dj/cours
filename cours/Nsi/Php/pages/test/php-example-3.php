@@ -9,7 +9,7 @@
   <title>PHP - Exemple 3</title>
 </head>
 
-<body>
+<body class="dark-bg">
   <div id="get-back">
     <a class="back-link" href="../index.php">Return</a>
   </div> <br>

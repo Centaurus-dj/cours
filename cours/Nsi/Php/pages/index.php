@@ -10,7 +10,10 @@
 </head>
 
 <body class="dark-bg">
-  <h1>Un premier programme en PHP: pour les tests</h1>
+  <div id="back-links">
+    <a class="back-link" href="../index.html">Return to Index</a>
+  </div>
+  <header>Un premier programme en PHP: pour les tests</header>
 
   <?php
   // Commentaire en php
@@ -79,6 +82,9 @@
         </ul>
         <ul>
           - <a href="test/php-exercise-5-sender.php">Exercice 5</a>
+        </ul>
+        <ul>
+          - <a href="qcm/index.php?status=enter">Exercice 6 | QCM</a>
         </ul>
       </ul>
     </div>
