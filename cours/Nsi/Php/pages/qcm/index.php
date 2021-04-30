@@ -48,7 +48,17 @@
   $status = controlSet("status", "get");
 
   if ($status == "enter") {
-    // HTML Form Here
+    // If we access file for the 1st time
+
+    echo "
+    <div>
+      <form action=\"index.php\" method=\"post\">
+        <input >
+        <input >
+        <input type\"submit\" value=\"Soumettre\">
+      </form>
+    </div>
+    ";
   } else if ($status == "end") {
     // ControlSet new variables
   }
