@@ -26,7 +26,7 @@ function simpleParsing () { // We parse floats, really easy, not needed to be co
     alert('le produit de ' + a + ' et ' + b + ' est ' + produit + ', et la somme est ' + somme);
   }
 }
-// Exercise 2 
+// Exercise 2
 function pythagoreFunc (input1Id, input2Id) {
   var ab = parseFloat(document.getElementById(input1Id).value); // ab given value
   var ac = parseFloat(document.getElementById(input2Id).value); // ac given value
@@ -83,7 +83,6 @@ function checkStringAppearence (stringToSearch, searchString) {
         r = r.replace("\n", "<br>");
         r += String('- ' + (x-1) + ' in given text. <br>');
       }
-      
     }
   }
   if (None == true) { // If the letter we're searching for isn't in the given string

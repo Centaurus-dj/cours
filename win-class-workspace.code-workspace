@@ -8,7 +8,7 @@
 		"workbench.iconTheme": "material-icon-theme",
 		"workbench.colorTheme": "Horizon Italic",
 		"vscode-office.autoTheme": true,
-		"editor.fontSize": 16,
+		"editor.fontSize": 20,
 
 		"liveServer.settings.donotShowInfoMsg": true,
 

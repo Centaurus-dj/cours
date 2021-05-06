@@ -35,5 +35,11 @@
     </form>
   </div>
   <div id="scrollbar-test"></div>
+  <script>
+    var refresh_page = document.createElement('a');
+    refresh_page.classList.add('back-link');
+    refresh_page.innerText = 'Refresh';
+    document.getElementsByClassName('float-left')[0].appendChild(refresh_page);
+  </script>
 </body>
 </html>

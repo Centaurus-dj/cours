@@ -39,6 +39,9 @@
 .in-txt {
   font-size: inherit;
 }
+.none-txt {
+  user-select: none;
+}
 
 .d-block { /*Display as block*/
   display: block;
@@ -46,7 +49,9 @@
 .d-none { /*Don't display*/
   display: none;
 }
-
+.indent-left {
+  margin-left: 3%;
+}
 
 /* The alert message box */
 .alert-box {
@@ -130,8 +135,12 @@ h1, h2, h3, h4, h5, h6, header {
   user-select: none;
 }
 
-input {
+input, select {
   color: inherit;
+}
+
+form label {
+  user-select: none;
 }
 
 input[type=text].d-none, input[type=password].d-none {
@@ -170,7 +179,7 @@ input[type=submit] {
   -o-transition: var(--transition-delay);
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, select option:hover {
   background-color: #14b19c;
 }
 
@@ -179,6 +188,14 @@ form {
   background-color: #242424;
   padding: 20px;
 }
+
+/*
+  User-defined DOM elements
+*/
+help {
+  font-size: 12px;
+}
+
 
 /*
   Floating Spaces
