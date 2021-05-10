@@ -1,0 +1,85 @@
+Géométrie et suites arithmétiques et géométriques:
+
+Exercice n°1:
+
+  1.
+    AB (5-(-3); 1-(-2))
+    AB (8; 3)
+    AB est un vecteur directeur de la droite (AB)
+
+    -b =  8    a = 3
+    b =  -8    a = 3
+
+    3x-8y+c=0
+
+    On utilise B afin de déterminer c:
+      3*5 - 8*1 + c = 0
+      15 - 8 + c = 0
+      7 + c = 0
+      c = -7
+
+    Donc une équation cartésienne de la (AB) est:
+      3x-8y-7=0
+
+  2.
+    3*(-1)-8*(-1)-7=0
+    -3+8-7=0
+    8-10=-2
+
+    C n'appartient pas à (AB)
+
+  3.
+    Afin de trouver x, on remplace y par 0.
+    3x-8*0-7=0
+    3x-7=0
+    3x=7
+    x=7/3
+
+    Donc l'abscisse du point d'intersection de la droite (AB) est 7/3.
+
+  4.
+    Afin de trouver y, on remplace x par 0.
+    3*0-8y-7=0
+    -8y-7=0
+    -8y=7
+    y=7/-8
+    y=-0.875
+
+    Donc l'ordonnée du point d'intersection de la droite (AB) est -0.875.
+
+  Le point d'intersection de la droite (AB) a pour coordonnées:
+    (7/3; -0.875)
+
+  5.
+    u(20; 15/2)
+    AB(8; 3)
+
+    det(u, AB)  = 20*3 - 8*15/2
+                = 60 - 60
+                = 0
+    u et AB sont colinéaires, donc le vecteur u
+    est un vecteur directeur de (AB).
+
+  6.
+    v(3; 8)
+    v . AB  = 3*8 + 8*3
+            = 24 + 24
+            = 48
+    v et AB ne sont pas orthogonaux, donc le
+    vecteur v n'est pas un vecteur normal de AB.
+
+  7.
+    Sachant que (d) est parrallèle à (AB), les deux droites partagent
+    les mêmes vecteurs directeurs, donc le vecteur AB est aussi valable pour la droite (d).
+
+    3x-8y+c=0
+
+    Afin de définir la valeur de c, nous remplaçons x et y par les coordonnées du point D.
+
+    3*1-8*2+c=0
+    3-16+c=0
+    -13+c=0
+    c=13
+
+  8.
+    s

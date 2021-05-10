@@ -1,0 +1,40 @@
+1.
+  Yes because the additional inhabitants are less than 400,000 which is the limit of additional people
+  each year who can be fed with the increasing of agriculture production.
+
+  Inhabitants increase: 8.3*1.02  = 8.466
+  Food production increase: 8.3+0.4 = 8.7
+
+  Hence 8.7 > 8.446, we can say that there is enough food.
+2.
+  a)
+    u[0]  = 8,300,000
+    u[1]  = 8,700,000 (8.3+0.4)
+    u[2]  = 9,100,000 (8.7+0.4)
+  b)
+    u[0]: 1st term
+    0.4: common difference
+
+    (u[n]) is an arithmetic sequence because we add 0.4 from one term to to following one.
+
+  c)
+    u[n]  = 8.3 + 0.4n
+
+3.
+  a)
+    v[0] = 8.3
+    v[1] = 8.466
+    v[2] = 8.63532
+
+  b)
+    (v[n]) is a geometric sequence because we multiply by the same number
+    from one term to the following.
+
+  c) v[n] = 8.3*(1.02)**n
+
+4.
+  We are looking for n which that,
+  v[n] > u[n]
+  8.3*(1.02)**n > 8.3+0.4n
+
+  Let's do an algorithm (see: dnl.py)
