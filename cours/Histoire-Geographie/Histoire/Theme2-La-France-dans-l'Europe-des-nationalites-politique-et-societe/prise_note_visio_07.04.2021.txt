@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
 ///                                                                        ///
-///     Les paranthèses commençant avec "(~" sont des commentaires         ///
+///     Les parenthèses commençant avec "(~" sont des commentaires         ///
 ///     laissés par moi où j'ai eu des doutes à moment de la réécriture    ///
 ///                                                                        ///
 //////////////////////////////////////////////////////////////////////////////
@@ -20,14 +20,14 @@ B - L'accélération de l'industrialisation en France sous le 2nd Empire
             Il va y avoir des patrons paternalistes (paternels) qui vont essayer d'avoir un mieux être pour leur travailleurs.
 
             C'est une pensée économique.
-		
+
 		- Un exemple: l'ascension des frères Pereire (PPO)
 			Les frères Pereire sont des entrepreneurs qui touchent à tout. (Banquiers, promoteurs immobiliers, chemins de fer, agriculture, industrie, stations balnéaires, etc..)
-			
+
             Activités banquaires:
 				- Création du crédit mobilier: L'épargne du client est réinvestie dans l'industrie
 				    C'est un parit, durant quinzaine d'années ça va énormément fonctionner.
-				
+
                 - 1867: Le crédit immobilier fait faillite --> c'est la fin de l'âge d'or des frères pérères.
 
                 Pratiques banquaires contestable (pas très nettes).
@@ -36,10 +36,10 @@ B - L'accélération de l'industrialisation en France sous le 2nd Empire
 			--> Ils vont devenir des proches de Napoléon III.
 
             Ils sont symboliques de l'envie de faire de l'argent durant le 2nd Empire. (~pas confiant sur le sens formulé par la phrase)
-		
+
 	B2 - Le développement de secteurs industriels moteurs
 		La croissance économique est forte durant tout le 2nd empire.
-		
+
 		- L'extension du réseau de chemins de fer
 			Il est essentiel à l'économie, tant qu'il se développe on peut construire des usines où il n'y a pas de charbon.
             |-> Transort de matériaux dont le charbon, essentiel au fonctionnement des usines.
@@ -67,13 +67,13 @@ C - L'entré dans la modernité
 			1re exposition en 1851 à Londres
 			L'exposition Universelle est un évenement où l'on expose diverses choses.
 			Il y a des machines, des productions, horticultures, produits chinois, beaux arts.
-			
+
 			C'est l'occasion d'acceuillir des personnes du monde entier.
 
             Statistiques:
     			- 14 000 exposants
 			    - 5 millions de visiteurs
-            
+
             Anécdote: La reine d'Angleterre est venu à Paris voir l'exposition Universelle.
 
 			On va construire un palais, le Palais de l'Industrie (il n'existe plus aujourd'hui car détruit).
@@ -86,7 +86,7 @@ C - L'entré dans la modernité
 		- L'exposition Universelle de 1867 à Paris
 			Apogée du Saint-Simmonisme.
 			Se passe au niveau du Champ de mars
-			
+
 			A retenir:
 				- Présentation pour la 1re fois de l'Aluminium
 				- Ingénieurs montre que le pétrole est un combustible intéréssant à l'avenir. (Apparement, ils avaient pas totalement tort)
@@ -102,12 +102,12 @@ C - L'entré dans la modernité
 			L'évolution de la population Parisienne --> elle est constante.
 			Le paysage de Paris est encore dans son schéma (plan) médiévale, batiments presque insalubres, rues veillement pavées.
 			Elle est une ville médiévale au 19ème siècle qui est confronté à un grand afflu de population.
-			
-            Butte Montmartre en 1850 --> quasiment la campagne avec des cabanes.
+
+      Butte Montmartre en 1850 --> quasiment la campagne avec des cabanes.
 			Les rues de Paris sont des rues dangereuses, elles n'ont pas d'éclairages.
 			Pauvreté des habitants, délabrement des rues --> conditions assez dramatiques.
 			Paris sombre, malsain, insalubre, dangereux --> raisons.
-		
+
 		- La mise en place du chantier par Napoléon III et le baron Haussman
 			Figure importante: Baron Haussman
 			Il va durer 17 ans (1853 à 1870).
@@ -115,7 +115,7 @@ C - L'entré dans la modernité
 		- Les objectifs de Haussman:
 			(Texte de Théophile Gautier, 1855)
 				Métaphores sur la santé
-			
+
 			- Aérer:
 				Plan de la vaille simple
 					- 3 cercle concentriques
@@ -125,7 +125,7 @@ C - L'entré dans la modernité
 				L'île de la Cité après les travaux:
 					Petites ruelles sont rasées
 					Raser habitations
-				On rase tout pour mieux reconstruire.				
+				On rase tout pour mieux reconstruire.
 
 				- Grandes percées haussmanniennes
 					Boulevard important: Boulevard Sébastopol
@@ -133,7 +133,7 @@ C - L'entré dans la modernité
 					2 grands bois de chaques cotés (Est et Ouest) de Paris.
 					innombrables squares
 					Importante reflexion sur l'hygiène dans la vie quotidienne.
-			
+
 			- Circuler et contrôler:
 				- Implantation de nouvelles gares
 				- Grandes percées facilitant l'accès au centre... et les interventions militaires en cas de révolte.
@@ -166,7 +166,7 @@ C - L'entré dans la modernité
 						Tout est très homogène.
 						Chaque étage correspond à une classe sociale.
 						Séparation physique entre les bourgeois et les domestiques. Exemple: 1 escalier pour les bourgeois séparé de l'escalier utilisé par les domestiques, conierges, etc...
-				
+
 				Paris se dotte de monuments ou mets en valeurs ceux déjà existents
 
 			Total de l'haussmanisation:
@@ -192,7 +192,7 @@ C - L'entré dans la modernité
 
 		- de nouvelles méthodes commerciales
 			Important: Aristide Boucicaut, fondateur du "Bon Marché"
-			
+
             - Création de ventes privées
 
 			- Création de la notion de "satisfait ou remboursé"
@@ -216,7 +216,7 @@ C - L'entré dans la modernité
                 - Droit de tester les produits (non consommables, bien sûr)
                     En effet, avant, les produits tels que les chapeaux étaient dans la remise
                     et c'était le gérant qui nous le montrait, pas le droit de l'essayer.
-                    Maintenant, on peut. 
+                    Maintenant, on peut.
 
         De nouveaux magasins comme:
 			- Galeries LAFAYETTE

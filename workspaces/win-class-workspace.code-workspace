@@ -1,12 +1,12 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": ".."
 		}
 	],
 	"settings": {
 		"workbench.iconTheme": "material-icon-theme",
-		"workbench.colorTheme": "Horizon Italic",
+		"workbench.colorTheme": "Material Theme Ocean High Contrast",
 		"vscode-office.autoTheme": true,
 		"editor.fontSize": 19,
 
