@@ -19,34 +19,34 @@
   </header>
   <?php
   // Func to control if var is set or not, optimize use of built-in functions
-  function controlSet(string $var, string $type_request) {
-    if ($type_request == "get") {
+  function controlSet(string $var, string $typeRequest, mixed $elseValue=null): mixed {
+    if ($typeRequest == "get") { // var sent by GET method
       if (isset($_GET[$var])) {
         return $_GET[$var];
       } else {
-        return null;
+        return $elseValue;
       }
-    } else if ($type_request == "post") {
+    } else if ($typeRequest == "post") { // var sent by POST method
       if (isset($_POST[$var])) {
         return $_POST[$var];
       } else {
-        return null;
+        return $elseValue;
       }
-    } else if ($type_request == "both") {
-      if (isset($_GET[$var])) {
+    } else if ($typeRequest == "both") {
+      if (isset($_GET[$var])) { // Firstly check if given using URL
         return $_GET[$var];
-      } else if (isset($_POST[$var])) {
+      } else if (isset($_POST[$var])) { // Else check if given using POST method
         return $_POST[$var];
-      } else {
-        return null;
+      } else { // If none works, return null value
+        return $elseValue;
       }
-    } else {
-      return null;
+    } else { // If other or none argument given, return null value
+      return $elseValue;
     }
   }
 
   // Func to control output of a var, if equal to a non-existing output create one to recognize state of var
-  function getOutputOf($variable) {
+  function getOutputOf(mixed $variable): mixed {
     // TODO: Find a better method of returning a string, maybe using a constructor. | Needs further research
     if (is_null($variable)) {
       return "null";
@@ -57,13 +57,58 @@
     }
   }
 
-  // Func to create conditions, easier to control special cases
-  function isEqualTo($variable, $value, $trueValue=true, $falseValue=false) {
-    if ($variable == $value) {
-      return $trueValue;
-    } else {
-      return $falseValue;
+  // Func to create a readable layout of arrays
+  function getArrayLayout(array $array): string {
+    $htmlBreakElement = "<br />";
+    $r = "{ $htmlBreakElement";
+    foreach ($array as $key => $value) {
+      $r = "$r". "<div class=\"indent-left\">". "[$key] => $value". $htmlBreakElement. "</div>";
     }
+    $r = "$r }";
+    return $r;
+  }
+
+  // Func to create conditions, easier to control special cases
+  function isEqualTo(mixed $variable, mixed $value): bool {
+    if (is_array($value)) {
+      foreach ($value as $key => $inDepthValue) {
+        if ($variable == $inDepthValue) {
+          return true;
+        }
+      } return false;
+    } else {
+      if ($variable == $value) {
+        return true; // If condition true, return true
+      } else {
+        return false; // Otherwise, return false
+      }
+    }
+  }
+
+  // Func to create conditions where we have different possibilities of values, in particular arrays used as named arrays
+  function inDictArray(string|int $valueWanted, array $localArray): bool{
+    $keysArray = array_keys($localArray);
+    $arrayLength = count($keysArray);
+    $indexedArray = array();
+
+    for ($x = 0; $x < $arrayLength; $x ++){ // Create indexed array
+      array_push($indexedArray, $localArray[$keysArray[$x]]);
+    }
+    for ($x = 0; $x < $arrayLength; $x ++){
+      $tempValue = $indexedArray[$x];
+      $outValue = $tempValue;
+      if (is_array($tempValue)) {
+        $outValue = getArrayLayout($tempValue);
+        foreach ($tempValue as $key => $value) {
+          $tempValue = $value;
+        }
+      }
+      if (isEqualTo($valueWanted, $tempValue)) {
+        return true;
+      }
+      echo "(Array) element n°" . $x + 1 . ": $outValue <br />";
+    }
+    return false;
   }
 
   $status = controlSet("status", "get");
@@ -99,7 +144,8 @@
     </div>
     ";
   } else if ($status == "end") {
-    $layout = "perma";
+    // If we access file after having completed the form
+    $layout = controlSet("layout", "get", "perma");
 
     // controlSet new variables
     $radio1 = controlSet("radio-one", "post"); // == medicine
@@ -120,7 +166,7 @@
       "radio1" => "medicine",
       "select1" => "server",
       "input1" => 115,
-      "input2" => ["numérique science informatique", "numerique science informatique"],
+      "input2" => array("numérique science informatique", "numerique science informatique"),
     );
 
     // Total Score
@@ -130,37 +176,53 @@
     /// Put at start, conditions about each variables using array.
     if (isEqualTo($radio1, $validValues['radio1'])) {
       $score += 1;
+      $q1Symbol = "&#9989;";
+    } else {
+      $q1Symbol = "&#10060;";
     }
     if (isEqualTo($select1, $validValues['select1'])) {
       $score += 1;
+      $q2Symbol = "&#9989;";
+    } else {
+      $q2Symbol = "&#10060;";
     }
     if (isEqualTo($input1, $validValues['input1'])) {
       $score += 1;
+      $q3Symbol = "&#9989;";
+    } else {
+      $q3Symbol = "&#10060;";
     }
     if (isEqualTo($input2, $validValues['input2'])) {
       $score += 1;
+      $q4Symbol = "&#9989;";
+    } else {
+      $q4Symbol = "&#10060;";
     }
 
     // Temporary layout
     if (isEqualTo($layout, "temp")) {
       echo "
       <h2>Status has been found as : $status</h2>
-      <h3><a href=\"index.php?status=enter\">Toggle init state</a>,
-      <a href=\"index.php?status=end\">Toggle current state</a>,
-      <a href=\"index.php?status=error\">Toggle error state</a>,
-      <a href=\"index.php?status=end-debug&radio-one=$outRadio1&select-one=$outSelect1&input-one=$outInput1&input-two=$outInput2\">Toggle end-debug state</a> <br>
-      <a href=\"https://gitlab.com/CentaurusDj/import-cours/\">Access Repo</a></h3>
+      <h3>
+        <a href=\"index.php?status=enter\">Toggle init state</a>,
+        <a href=\"index.php?status=end\">Toggle current state</a>,
+        <a href=\"index.php?status=error\">Toggle error state</a>,
+        <a href=\"index.php?status=end-debug&radio-one=$outRadio1&select-one=$outSelect1&input-one=$outInput1&input-two=$outInput2\">Toggle end-debug state</a> <br>
+        <a href=\"https://gitlab.com/CentaurusDj/import-cours/\">Access Repo</a>
+      </h3>
+      <p>Next comes test of function:</p>
       ";
+      echo inDictArray("numérique science informatique", $validValues);
     } else {
       echo "
       <h1>Votre score est de: $score</h1>
       <p><a id=\"correction-link\" href=\"javascript:void()\" onclick=\"document.getElementById('correction-container').classList.toggle('d-none'); document.getElementById('correction-link').classList.add('d-none');\">Voir correction</a></p>
       <div id=\"correction-container\" class=\"d-none\">
         <ul>
-          <ul>Question 1: medicine</ul>
-          <ul>Question 2: server</ul>
-          <ul>Question 3: 115</ul>
-          <ul>Question 4: numérique science informatique</ul>
+          <ul>Question 1: medicine $q1Symbol</ul>
+          <ul>Question 2: server $q2Symbol</ul>
+          <ul>Question 3: 115 $q3Symbol</ul>
+          <ul>Question 4: ". getArrayLayout($validValues['input2']) . "$q4Symbol</ul>
         </ul>
       </div>
 

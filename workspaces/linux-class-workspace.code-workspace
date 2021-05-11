@@ -1,14 +1,14 @@
 {
   "folders": [
     {
-      "path": "."
+      "path": ".."
     }
   ],
   "settings": {
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Palenight Theme",
     "vscode-office.autoTheme": true,
-    "editor.fontSize": 21,
+    "editor.fontSize": 18,
     "standard.enable": false,
 
 
@@ -19,6 +19,8 @@
 
 
     "python.pythonPath": "bin/python",
+
+    "phpserver.browser": "chromed",
 
 
     "jshint.lintHTML": true,
