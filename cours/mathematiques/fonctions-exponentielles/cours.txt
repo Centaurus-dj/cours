@@ -1,0 +1,86 @@
+Fonction exponentielle:
+  exp(x) == e**x
+
+La dérivé de la fonction exponentielle est égale à la fonction elle-même.
+
+Exemples:
+
+  A = exp(2x)*exp(3+5x)*exp(1)
+    = exp(2x+3+5x+1)
+    = exp(7x+4)
+
+  B = exp(2x+1) / exp(1-x)
+    = exp(2x+1-(1-x))
+    = exp(2x+1-1+x)
+    = exp(3x)
+
+  C = exp(3x)²*exp(1-3x)
+    = exp(6x)*exp(1-3x)
+    = exp(6x+1-3x)
+    = exp(3x+1)
+
+  = (exp(x)+exp(-x))²
+  = exp(x)²+2*exp(x)*exp(-x)*exp(-x)²
+  = exp(2x)+2*exp(0)+exp(-2x)
+  = exp(2x)+2+exp(-2x)
+
+  liens exercices d'applications:
+    - https://mathenpoche.sesamath.net?page=terminale#terminale_1_5_4_sesabibli/5d24fe5170dffc21dad32b5a
+    - https://mathenpoche.sesamath.net?page=terminale#terminale_1_5_4_sesabibli/5d263e3f70dffc21dad32b60
+
+  x                 | -inf       +inf |
+  signe de exp(x)   |        +        |
+  Variations de     |        /        |
+  exp(x)
+
+
+  Exemples:
+
+    Résoudre:
+
+      2*exp(3x-1) = 2
+      exp(3x-1) = 1
+      exp(3x-1) = exp(0)
+      3x-1 = 0
+      x = 1/3
+
+      exp(-2x+5)>exp() (exp() == exp(1))
+      exp(-2x+5)>exp(1)
+      -2x+5 > 1
+      -2x > -4
+      x < 2 (Change de signe car divise par nbr négatif)
+      x e ]-inf; 2[
+
+  Exercice 3:
+    https://mathenpoche.sesamath.net?page=terminale#terminale_1_5_4_sesabibli/5d31840870dffc21dad33d9a
+
+  Exercice 4:
+    https://mathenpoche.sesamath.net?page=terminale#terminale_1_5_4_sesabibli/5e46b2a111bf937495a7e6f9
+
+  Rappel dérivation:
+    (U*V)' = U'*V + V'*U
+    U/V = (U'*V - V'*U) /V²
+
+  Exemples:
+
+    f(x)= exp(5x+2)         f(x)= exp(-2x)
+        = 5*exp(5x+2)           = -2*exp(-2x)
+
+    g(x)= x*exp(-x)
+
+      On est de la forme U*V avec:
+        U(x)=x          U'(x)=1
+        v(x)=exp(-x)    V'(x)=-exp(-x)
+
+      g'(x) = 1*exp(-x)+(-exp(-x))*x
+            = exp(-x) (1-x)
+
+    h(x)= 2x-1 / 3exp(2x)
+
+      On est de la forme U/V avec:
+        U(x)=2x-1         U'(x)=2
+        V(x)=3exp(2x)     V'(x)=2*3exp(2x)=6exp(2x)
+
+      h'(x) = 2*3exp(2x)-6exp(2x)*(2x-1) / (3exp(2x))²
+            = exp(2x) (6-6(2x-1)) / (3exp(2x))²
+            = exp(2x) (-12x+12) / (3exp(2x))²

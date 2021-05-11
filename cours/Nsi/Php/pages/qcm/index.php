@@ -57,7 +57,7 @@
     }
   }
 
-  // Func to create conditions, easier to control special case
+  // Func to create conditions, easier to control special cases
   function isEqualTo($variable, $value, $trueValue=true, $falseValue=false) {
     if ($variable == $value) {
       return $trueValue;
@@ -117,7 +117,6 @@
 
     // Answers dictionnary
     $validValues = array(
-      "test" => "test",
       "radio1" => "medicine",
       "select1" => "server",
       "input1" => 115,
@@ -143,7 +142,7 @@
     }
 
     // Temporary layout
-    if ($layout == "temp") {
+    if (isEqualTo($layout, "temp")) {
       echo "
       <h2>Status has been found as : $status</h2>
       <h3><a href=\"index.php?status=enter\">Toggle init state</a>,
@@ -159,9 +158,9 @@
       <div id=\"correction-container\" class=\"d-none\">
         <ul>
           <ul>Question 1: medicine</ul>
-          <ul>Question 2: </ul>
-          <ul>Question 3: </ul>
-          <ul>Question 4: </ul>
+          <ul>Question 2: server</ul>
+          <ul>Question 3: 115</ul>
+          <ul>Question 4: numérique science informatique</ul>
         </ul>
       </div>
 
