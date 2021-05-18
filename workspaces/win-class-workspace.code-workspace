@@ -6,7 +6,7 @@
 	],
 	"settings": {
 		"workbench.iconTheme": "material-icon-theme",
-		"workbench.colorTheme": "Material Theme Ocean High Contrast",
+		"workbench.colorTheme": "Panda Syntax",
 		"vscode-office.autoTheme": true,
 		"editor.fontSize": 19,
 
