@@ -27,7 +27,7 @@ Ex 1:
       -2x = -2
       x = 1
 
-      x                     | 0     1       7
+     x                      | 0     1       7
      signe de -2x+2         |    +  0    -
      signe de exp(-x+3)     |    +       +
      signe de f'            |    +  0    -
@@ -108,4 +108,45 @@ Ex 1:
     U'(x) = 10
     V'(x) = 1 exp(-x)
 
-    U'*V + V'*U = 10*exp(-x) + 1 exp(-x)*10x-5
+    U'*V + V'*U = 10*exp(-x) + 1 exp(-x)*(10x-5)
+                = 10 exp(-x) + (10x exp(-x) + 5 exp(-x))
+                = exp(-x) (10-10x+5)
+                = exp(-x) (15-10x)
+
+  résolvons: 15-10x=0
+  15-10x=0
+  10x = -15
+  x = -15/10
+  x = 3/2
+
+  x               |0    3/2     6
+  signe de exp(-x)|  +       +
+  signe de 15-10x |  +   0   -
+  signe de f'     |  +   0   -
+  var de f        |  /       \
+
+Ex 2:
+  f(x) = -2x+20-exp(-2x+10)
+
+  Partie A:
+    1.
+      f'(x) = -2+2exp(-2x+10) = 2(-1+exp(-2x+10))
+
+    2.
+      a)
+        2(-1+exp(-2x+10)) >= 0
+        -1+exp(-2x+10) >= 0
+        exp(-2x+10) >= 1
+        -1+exp(-2x+10) >= exp(0)
+        -2x+10 >= 0
+        -2x >= -10
+        x <= 5
+
+      b)
+        x             |3    5   13
+        signe de f'   |  +  0 -
+        var de f      |  /  9 \
+
+        f(5)  = -2*5+20-exp(-2*5+10)
+              = -10+20-1
+              = 9
