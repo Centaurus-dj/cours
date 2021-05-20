@@ -8,7 +8,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Palenight Theme",
     "vscode-office.autoTheme": true,
-    "editor.fontSize": 18,
+    "editor.fontSize": 15,
     "standard.enable": false,
 
 
