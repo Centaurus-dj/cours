@@ -1,4 +1,7 @@
-vocabulary
+# vocabulary
 
-die Malerei: une grotte
-die Befreiung: libération
+## die Malerei: une grotte
+
+## die Befreiung: libération
+
+## die Gelegenheit: ?
