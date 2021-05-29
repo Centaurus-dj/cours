@@ -18,7 +18,7 @@
     "git.ignoreLimitWarning": true,
 
 
-    "python.pythonPath": "bin/python",
+    "python.pythonPath": "/bin/python",
 
     "phpserver.browser": "chromed",
 
