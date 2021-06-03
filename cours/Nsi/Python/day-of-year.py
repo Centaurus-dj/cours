@@ -56,16 +56,27 @@ def isBisextile(annee):
 def generateMonthDays(month_length: int, year: int) -> list:
   global jours_semaine
   global index_desired_date_day
+  global taille_mois
 
   curr_day = 1
   week_day = 0
   week_nbr = 0
   month_list = []
 
+  test_year_list = []
+  test_month_list = []
+
   x = 1
-  for i in range(0, year):
-    x *= 365
-  print(x//7, x/7, x%7)
+  ### Determine change rate of one year of date of 1st January
+  for i in range(0, 12):
+    y = i+1
+    print(y, taille_mois[y])
+    for day in range(0, taille_mois[y]):
+      test_month_list.append(jours_semaine[day//7 if day >= 7 else day])
+      print(day//7 if day >= 7 else day)
+
+  #for i in range(0, year):
+  #  pass
 
   while week_nbr <= 4:
     month_list.append([curr_day, jours_semaine[week_day]])
@@ -75,10 +86,11 @@ def generateMonthDays(month_length: int, year: int) -> list:
       week_day = 0
       week_nbr += 1
 
-  if month_list[0][0] == index_desired_date_day:
+  if month_list[0][1] == index_desired_date_day:
     print("Wouhou!")
   else:
-    print("still not staisfying")
+    print("still not satisfying, because:")
+    print(month_list[0][0], month_list[0], "-->", index_desired_date_day, desired_date)
   exit()
 
   return month_list
@@ -142,6 +154,7 @@ print("Formated date:", date)
 if check(date, date_type):
   if isBisextile(int(date[2])):
     taille_mois[2] = 29
+    print(generateMonthDays(taille_mois[1], 2020))
   else:
     print("annee non-bi")
 else:
