@@ -37,6 +37,7 @@ Similitudes/differences with the documents we have studied up to now:
 
 Personal opinion:
 
+
 Personal document: One in a million
 
 type of document: Song
@@ -60,18 +61,40 @@ Personal opinion:
 
 
 
-Personal document:
+Personal document: Green Night (?)
 
-type of document:
-author:
+type of document: Film
+author: Stephan King (?)
 date:
+origin: American
+genre: Imaginary drama
+résumé:
+  ...  understands he is innocent (who?)
+
+link of the document with the axis:
+  Reminding of Green Book
+
+Similitudes/differences with the documents we have studied up to now:
+  Similiar: encounter while they doesn't have the sapme social level/class
+
+Personal opinion:
+  Bc of the reflexion ...
+
+
+Personal document: Invitation Gale/ Imitation Gale
+
+type of document: Film
+author:
+date: 28.09.
 origin:
 genre:
 résumé:
+  ... comissioned by the British army
+  Presence of Allan Turing. (?)
 
 link of the document with the axis:
 
 Similitudes/differences with the documents we have studied up to now:
+  compared to autism because thinks a lot (?)
 
 Personal opinion:
-

@@ -150,3 +150,116 @@ Ex 2:
         f(5)  = -2*5+20-exp(-2*5+10)
               = -10+20-1
               = 9
+
+Ex 5:
+  On sait que:
+    f(0) = 2
+    f(-2) = 0
+
+  f(0) = 2
+  (a*0+b)* exp(-0) = 2
+  b = 2
+
+  f(-2) = 0
+  (a*(-2)+2)exp(-(-2)) = 0
+  (-2a+2)exp(2) = 0
+  -2a+2 = 0 /exp(2) = 0
+  -2a+2 = 0
+  -2a = -2
+  a = -2/-2 = 1
+
+  Donc f(x) = (x+2)exp(-x)
+  f'(x) = U'*V + V'*U
+        = 1*exp(-x) + (-exp(-x))*(x+2)
+        = exp(x) (1+(-1)*(x+2))
+        = exp(-x) (1-x-2) = exp(-x) (-x-1)
+
+  -x-1 = 0
+  -x = 1
+  x = -1
+
+          x;  -inf    -1    +inf
+  signe
+  de exp(-x)      +       +
+  signe -x-1      +   0   -
+  signe de f'     +   0   -
+  Var de f        /       \
+
+  f(-1) = (-1+2)exp(-(-1)) = 1*exp(1) = e
+
+  L'ordonnée de A est e.
+
+Feuille d'exercices n°3:
+
+  Ex 1:
+
+    1.
+      f'(-2) = 0 car tengeant parrallèle à abscisse --> constante
+      f'(0) = 4/1 = 4 car déplacement verticale sur horizontale de B à C.
+
+    2.
+      f(x) = exp(x)(2x+2)
+
+      f'(x) est de forme U*V
+      f'(x) = U'*V + V'*U
+            = exp(x)*(2x+2) + 2*exp(x)
+            = exp(x)(2x+2+2)
+            = exp(x)(2x+4)
+
+    3.
+      2x+4 = 0
+      2x = -4
+      x = -4/2
+      x = -2
+
+      x                   -inf    -2    +inf
+      signe de exp(x)           +     +
+      signe de 2x+4             -  0  +
+      signe de f'               -  0  +
+      var. de f                 \     /
+
+    4.
+      y = f'(a)(x-a)+f(a)
+        = f'(0)(x-0)+f(0)
+        = exp(0)(2*0+4)(x-0)+exp(0)(2*0+2)
+        = 1(4)(x-0)+1(2)
+        = 4(x-0)+2
+        = (4x-4*0)+2
+        = 4x+2
+
+    5.
+      A = f'(-2)
+        = exp(-2)(2*(-2)+4)
+        = 0exp(-2)(-4+4)
+        = 0exp(-2)(0)
+        = 0
+
+      B:  y = 4*1+2
+          y = 4+2
+          y = 6
+
+  Ex 3:
+    1.
+      f'(-1) = 0
+    2.
+      f'(x) <= 0
+      S = [-4; -1] U [1.5; 2]
+
+    3.
+      f'(x) est de la forme U'*V + V'*U
+      f'(x) = (-2x+2.5)*exp(x) + exp(x)*(-x²+2.5x-1)
+      f'(x) = exp(x) (-2x+2.5-x²+2.5x-1)
+      f'(x) = exp(x) (-x²+0.5x+1.5)
+
+    4.
+
+    -x²+0.5x+1.5 = 0
+    delta = b²-4ac
+          = 0.5² - 4*(-1*1.5)
+          = 0.25 + 6
+          = 6.25
+
+    x[1] = 
+    x[2] = 
+
+      x | -4    |     2
