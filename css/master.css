@@ -1,0 +1,45 @@
+
+header {
+  text-align: center;
+  user-select: none;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+  display: block;
+}
+
+img {
+  width: 35%;
+  height: 35%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 4px 4px 8px #fff;
+  text-align: inherit;
+}
+
+.dark-bg {
+  background-color: #191919;
+}
+
+.white-txt {
+  color: #fff;
+}
+
+.center-txt {
+  text-align: center;
+}
+
+.title { /* TODO: Write responsive behaviour of hover */
+  font-size: 46px;
+}
+
+.problematic {
+  font-size: 23px;
+  text-decoration: underline;
+  color: rgb(230, 38, 38);
+}
