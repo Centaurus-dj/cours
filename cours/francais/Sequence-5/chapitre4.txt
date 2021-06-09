@@ -1,0 +1,73 @@
+Révisions sur la phrase complexe; les subordonnées circonstancielles
+  Incipit de "La princesse de Clèves" de Madame de La Fayette
+
+
+1/ Phrase, proposition, principale et subordonnée
+  Phrases surlignées en bleu dans le texte: indiquez les différentes propositions et distinguez la principale
+  et les subordonnées. Indiquez si chaque subordonnée et relative ou conjonctive et précisez la fonction de ces dernières.
+
+  ligne 9 à 11:
+    1 proposition principale (= pp)
+    2 subordonnées
+    |-> 2 relative
+    --> 3 propositions
+
+  lignes 17 et 18:
+    1 pp
+    1 subordonnée
+    |-> conjonctive
+    Complément du verbe qui répond à quest "quoi" --> COD (-_-)
+
+  lignes 26 et 27:
+    3 propositions
+    1 pp
+    2 subordonnées
+    |-> 1 conjonctive
+    |-> 1 relative
+
+  ligne 29 à 31:
+    3 propositions
+    1 pp soupée par subordonnées
+    2 subordonnées
+    |-> 2 relatives
+
+  lignes 37 et 38:
+    2 propositions
+    1 pp (de "était" à fin phrase)
+    1 subordonnée
+    |-> relative car ("ce qui") et est sujet du verbe "être"
+
+  "que" après un nom est toujours un pronom relatif,
+  "que" après un verbe est toujours une conjonction de subordination.
+
+2/ Repérez les subordonnées circonstancielles
+  Subordonnées sulrignées en jaune:
+
+    a. Indiquez la circonstance exprimée
+
+      lignes 3 et 4:
+        commençant par "quoique" et finissant par "vignt ans" est une opposition.
+
+      ligne 6:
+        cause
+
+      lignes 12 et 13:
+        opposition
+
+      ligne 14:
+        temps
+
+      lignes 19 et 20:
+        conséquence
+
+      lignes 32 et 33:
+        conséquence
+
+
+    b. Transformez subordonnée circonstancielles en groupe nominal circonstancielle
+
+      ... malgré les vingt ans du début de sa passion pour Diane de Poitiers, duchesse de Valentinois, ...
+      ... De part sa réussite admirable dans tous les exercices du corps, ...
+      ... malgré
+
+DFornate voudrait épouser Araminte mais l'argent fait obstacle à leur union.
