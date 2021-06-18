@@ -6,7 +6,7 @@
   ],
   "settings": {
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Palenight Theme",
+    "workbench.colorTheme": "Horizon Italic",
     "vscode-office.autoTheme": true,
     "editor.fontSize": 15,
     "standard.enable": false,
