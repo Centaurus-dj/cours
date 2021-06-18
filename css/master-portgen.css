@@ -5,9 +5,14 @@ header {
 }
 
 footer {
-  width: 100%;
-  background-color: #000;
   display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  min-height: 6%;
+  background-color: #000;
 }
 
 img {
@@ -22,16 +27,59 @@ img {
   text-align: inherit;
 }
 
+a {
+  color: rgb(253, 119, 30);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*
+
+  User-defined classes
+
+*/
+
 .dark-bg {
   background-color: #191919;
+}
+
+.black-bg {
+  background-color: #000;
+}
+
+.white-bg {
+  background-color: #fff;
 }
 
 .white-txt {
   color: #fff;
 }
 
+.black-txt {
+  color: #000;
+}
+
 .center-txt {
   text-align: center;
+}
+
+.left-txt {
+  text-align: left;
+}
+
+.right-txt {
+  text-align: right;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.yes-select {
+  user-select: auto;
 }
 
 .title { /* TODO: Write responsive behaviour of hover */
