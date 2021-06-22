@@ -1,15 +1,24 @@
 The Hound of Baskervilles
 
 
-  The Hound of Baskervilles is the third of the four novels about the detective Sherlock Holmes.
+  The Hound of Baskervilles is the third of the four novels about the detective Sherlock Holmes written
+  by Arthur Conan Doyle.
   Originally serialised in The Strand Magazine from August 1901 to April 1902.
-  THe author of this series is Arthur Conan Doyle.
 
-  It takes place on Dartmoor in Devon in England's West Country and tells the story of an attempted
+  The plot takes place on Dartmoor in Devon in England's West Country and tells the story of an attempted
   murder inspired by the legend of a fearsome, diabolical hound of supernatural origin.
   Sherlock Holmes and his companion Dr. Watson investigates the case.
   This was the first appearance of Holmes since his presumed death in "The Final Problem",
-  and the success of The Hound of the Baskervilles led to the character's eventual revival.
+  the previous novel, and the success of The Hound of the Baskervilles led to the character's
+  eventual revival.
+
+  I pretty much like the novel even if I couldn't read the entirety of it but from the 20 pages
+  I could read I think the main character, Sherlock Holmes, can be said to be a little autistic
+  with his mathematics-based and proof-based view of things. He has a view based on scientific
+  facts and has a great power of deduction. His train of thoughts are likely to be said different
+  from the one the common people has. It's what makes him special when we follow his thoughts,
+  the things we think can be uninteresting or help the situation the main character is in sometimes
+  appear to be what helps him to find a solution to the issue he's having.
 
 
 Personal document: Atypical
@@ -36,7 +45,54 @@ Similitudes/differences with the documents we have studied up to now:
   The characters are really endearing.
 
 Personal opinion:
+  ...
 
+type of document: Video
+author:
+  National autistic association
+date:
+Personal document: What is autism?
+origin:
+  UK
+genre:
+résumé:
+  Autism: lifelong disability
+  Explains the autism by the narrator, which is too autistic.
+  People are needed to be followed since they're child to help them.
+  Restaurant where the only one working there are only people with disabilities.
+
+link of the document with the axis:
+  Narrator is autistic.
+Similitudes/differences with the documents we have studied up to now:
+
+  Both narrators are autistic
+  Very large spectrum of autism.
+  Christopher is fictional and the narrator of the video is realistic.
+
+Personal opinion:
+  Help to understand Christopher because she didn't knew autistic people
+  had difficulties reading facial expressions.
+
+Personal document: Gilbert Grape
+type of document: Film
+author: Peter Edge
+date:
+origin: American
+genre:
+résumé:
+  Young man living in the city with .. mother and autistic brothers.
+  It's a fictional story.
+  MC: Johny Depp
+  Autistic boy: Leonardo DiCaprio
+
+link of the document with the axis:
+
+Similitudes/differences with the documents we have studied up to now:
+  .. fictional young boy
+
+Personal opinion:
+  Beautiful story speaking of obesity and autism
+  Try to help his family...
 
 Personal document: One in a million
 
@@ -67,8 +123,8 @@ type of document: Film
 author: Stephan King (?)
 date:
 origin: American
-genre: Imaginary drama
 résumé:
+genre: Imaginary drama
   ...  understands he is innocent (who?)
 
 link of the document with the axis:
@@ -87,8 +143,8 @@ type of document: Film
 author:
 date: 28.09.
 origin:
-genre:
 résumé:
+genre:
   ... comissioned by the British army
   Presence of Allan Turing. (?)
 
