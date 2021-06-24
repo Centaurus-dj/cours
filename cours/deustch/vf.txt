@@ -1,0 +1,19 @@
+VF7:
+
+  -, schrieb, hat geschrieben, schreibt, écrire
+  nehmen, -, haben genommen, nimmst, prendre
+  finden, fand, -, finden, trouver
+  schweigen, schwiegst, aheb geschwiegen, -, se taire
+  lügen, logen, haben gelogen, lügt, -
+
+VF?:
+  -, geschah, ist geschehen, geschieht, se produire
+  vergessen, -, haben vergessen, vergisst, oublier
+  bleiben, blieb, -, bleiben, rester
+  tragen, trugst, habe getragen, -, porter
+  geben, gaben, haben gegeben, gebt, -
+
+VF11:
+  -, sprachst, hat gesprochoen, sprechen, parler
+  tragen, -, haben getragen, trägst, porter
+  schlagen, schlug, -, schlagen

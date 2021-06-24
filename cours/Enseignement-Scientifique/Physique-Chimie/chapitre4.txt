@@ -1,0 +1,53 @@
+1/
+  À ne pas faire
+
+2/
+
+  En fonction de la saison, l'inclinaison de l'âxe terrestre diffère,
+  en été il est vertical, en hiver il est penché vers la droite.
+  Faisant ainsi baisser la puissance solaire reçue par un même territoire.
+
+3/
+
+  Moyennes mensuelles Bureau météorologique:
+    Voir "docs-made/graph_temp.png"
+
+4/
+  a.
+    La variation maximale est entre 16h et 18h.
+
+  b.
+    La variation maximale est entre 8h et 12h.
+
+###########################
+####  Upper part to send
+###########################
+
+//////////////////////////////////////////////
+3 raisons changement températures Terre:
+
+  - sa place durant sa révolution autour du Soleil
+  - son inclinaison
+  - son rondodité (?)
+
+axe d'inclinaison creant un obliquité. (?)
+
+Ex4 p.82:
+  La longueur d'onde est d'environ 2.4*10**3 nm.
+
+Ex5 p.82:
+  T = 2.90*10**-3 / Lambda{max}
+    = 2.90*10**-3 / 675.10**-9
+    = 4296 K
+
+Ex10 p.84:
+  1.
+  2. Lambda{max} et 1/T sont proportionelles.
+    Lambda{max} = k*1/T
+  3.
+    Température = 340 nm
+    T = 8529 k
+
+Ex11 p.84:
+  Lambda{max} = 500 nm, ça fait parti du visible
+  400 et 500 nm

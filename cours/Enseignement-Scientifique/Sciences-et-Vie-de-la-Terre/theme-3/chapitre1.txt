@@ -1,0 +1,62 @@
+Thème 3: La Terre: un astre singulier
+
+  Chapitre 1: L'histoire de l'âge de la Terre
+
+  Recherches:
+    1er à se demander l'âge de la Terre: Ussher
+    Qui ? Quand ? Quoi ?:
+      - Ussher --> 17° siècle, archbishop, Chronologie d'Ussher: histoire de la Terre d'après l'ancien testament. (12h 22 octobre 4004 av. J.C.)
+      - Buffon --> 18° siècle, scientifique français, Hypothèse création de la Terre: Comète collision Soleil -> éjection de matières et solidification en Terre. 10 millions d'années --> 74 000 ans
+      - Képler --> 17° siècle, scientifique: astronome, physicien, Mouvement des planètes -> 6 000 ans, solstice d'été
+      - John Philipps (géologue) --> 19° siècle, géologue, étude des roches -> Sédiments (doc. 5 p.153), 8 millions d'années
+      - Léonard de Vinci --> 16° siècle, touche à tout scientifique, fossiles -> idée d'évolution, impossible en 4000 ans d'avoir ce résultat
+
+  Prérequis p.150:
+    Terre:
+      - Tourne autour du Soleil
+      - de forme sphérique
+      - Planète tellurique, planète rocheuse
+      - est dans la zone habitable du système solaire
+      - a une composition atmosphérique favorable au développement d'être vivants
+
+    Sédiments:
+      - Particules venant de l'érosion de roches.
+      - Sont transportés principalement par les courants marins, ruissaux, rivières, fleuves. (Morènes, traces d'anciens glaciers) ?
+
+    Big Bang:
+      Le Big Bang a eu lieu il y a 13.7 Milliard d'années (Ma).
+
+    Désintégration radioactive:
+      Oui, car en fonction de leur quantité au sein d'un objet géologique l'on peut déterminer l'âge de l'objet.
+      Isotope du carbone, le carbone 14.
+
+  I/ De l'Antiquité au XVIII°S premières estimations
+    Doc.4 p.153
+
+    Au cours de l'Histoire, les ages proposées par la Terre ont variés ainsi pour Aristote, notre planète a toujours existé.
+    Au 17° siècle, des calculs effectués à partir de la Bible proposent que la naissance du monde aurait eu lieu aux alentours de 4000 ans avant Jésus Christ.
+    Au 18° siècle émerge les premières démarches scientifiques résultants d'observations et d'expériences, par exemple Buffon en se fondant sur des hypothèses (qui se sont avérée fausses)
+    concernant le refroidissement de la Terre et des mesures expérimentales évalue l'age de la Terre à 100 000 ans.
+
+    Activité p.153:
+      Voir fichier tableur
+
+      Prendre 2 points A et B.
+
+      | (temps de refroidissement, min)
+      |      /
+      |     /
+      |    /
+      |   /
+      |  /
+      | /
+      |--------------------- (pouces)
+
+      |-> y = ax+b
+          a = coefficient directeur
+          a = (y[b] - y[a]) / (x[b] - x[a])
+          Points:
+            A (39; 0.5)
+            B (196; 2.0)
+            a = (196 - 39) / (2 - 0.5)
+              = 157 / 1.5

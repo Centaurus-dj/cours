@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Javascript/css/master.css">
+  <title>Document</title>
+</head>
+<body class="dark-bg">
+  <div id="back-links">
+    <a class="back-link" href="index.html">Back to index</a>
+  </div>
+  <header>
+    Styles tests
+  </header>
+
+  <div id="button-test">
+    Here is a button: <button onclick="alert('I\'m a button')">A button</button>
+  </div>
+  <div id="form-test">
+    <form>
+      <label for="test-input">Pseudo</label>
+      <input name="test-input" type="text" value="Centaurus">
+
+      <label for="test-input">Password</label>
+      <input name="test-input" type="password" value="Password">
+
+      <label for="checkbox-test">Checkbox 1</label>
+      <input type="checkbox" name="checkbox-test" id="">
+      <label for="checkbox2-test">Checkbox 2</label>
+      <input type="checkbox" name="checkbox2-test" id="">
+
+      <input name="submit-test" type="submit" value="Submit">
+    </form>
+  </div>
+  <div id="scrollbar-test"></div>
+  <script>
+    var refresh_page = document.createElement('a');
+    refresh_page.classList.add('back-link');
+    refresh_page.innerText = 'Refresh';
+    document.getElementsByClassName('float-left')[0].appendChild(refresh_page);
+  </script>
+</body>
+</html>

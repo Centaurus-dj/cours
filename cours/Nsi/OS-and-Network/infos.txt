@@ -1,0 +1,23 @@
+link: https://isn-icn-ljm.pagesperso-orange.fr/1-NSI/co/section_Chapitre6.html
+
+Nom: Opolka Alexis
+
+Il fut introduit par François Girard travaillant à IBM en 1955 après avoir
+consulté son professeur de lettre à Paris afin d'avoir un terme caractérisant
+cette machine qui était au par avant appelée "calculateur" (traduction de "computer").
+
+écran, carte mère, CPU, RAM, carte de périphériques, bloc d'alimentation
+Lecteur Disques (DVD), Disque Dur, souris, clavier
+
+Unité centrale, mémoir principale
+
+processeur et la mémoire
+communication
+Le ..., qui transporte les ...
+Le ..., qui transporte les ...
+Et le ..., qui sert à ...
+
+ROM dont le rôle est de ...
+et la mémoire RAM dont le rôle est de ...
+
+Le processeur peut communiquer avec les différentes mémoires et périphériques.

@@ -1,0 +1,95 @@
+Chapitre 2: Une fable classique, Le coche et la mouche,
+  Fables de Jean de La Fontaine, Livre VII n°8
+
+1/ Le plan du texte
+  Divisez le texte en trois parties et attribuez un titre à chacune.
+
+  v. 1 à 16: La difficile montée
+  v. 17 à 28: La gloire de la mouche, Les pensées de la mouche.
+  v. 29 à 32: La morale
+
+
+2/ La première partie, une aide innoportune
+  a) Des voyageurs en difficulté (vers 1 à 5)
+    Etudiez le rythme ternaire dans les cinq premiers vers, puis arrêtes-vous sur chacun des trois mots employés:
+      - vers 1: quelles sont les trois raisons pour lesquelles la voiture est en difficulté sur le chemin ?
+      - vers 4: qu'indiquent les trois types de voyageurs sortis du coche ?
+      - vers 5: quelle figure de style forme la succession des trois verbes ? Qu'exprime-t-elle ?
+
+    Les cinq premiers vers sont écrits sur un rythme ternaire.
+    Ce rythme a pour effet de ralentir le récit afin d'évoaquer les difficultés des chevaux.
+    Le chemin réunit toutes les difficultés.
+    Les trois types de passagers, au vers 4, ont en commun de ne pas pouvoir pousser la voiture, ils sont classés par ordre décroissant de force.
+    Figure inverse au vers 5, un gradation qui évoque la fatigue croissante des chevaux.
+    Ça rythme dans le sens du ralentissement.
+
+
+  b) L'intervention de la mouche (vers 6 à 16)
+    Comment la mouche "aide"-t-elle le coche à avancer ?
+    Relevez les verbes qui montrent que la mouche a l'illusion d'apporter son aide.
+    Étudiez la comparaison aux vers 14 à 16. Quelle rime la renforce ?
+
+    La mouche prétend faire avancer le coche en bourdonnant et en pisquant les chevaux.
+    Elle est loin d'aider le coche, elle le gène.
+    "prétend", "fait", "s'attribue", "aller/venir"
+    La succession des verbes d'action par lesquelles la mouche prétend apporter son aide
+    accélère le récit et évoque les faits agaçants de la mouche.
+    "pique l'un, pique l'autre", "va, vient, fait l'empressée"
+
+    Comparaison à une situation de guerre.
+    Vers 14 à 16, le sergeant de bataille est un sous officier dont le rôle est d'encourager les troupes et de montrer l'exemple du courage.
+    Comme lui, elle se trouve partout en même temps.
+
+    La Fontaine utilise l'alexandrin dont il se souvient qu'il a servit la première fois à raconter les exploits d'Alexandre le Grand.
+    La rime "gloire/victoire" accenytue l'idée que la mouche croit avoir à elle seule le mérite d'avoir fait avancer la voiture.
+
+3/ La deuxième partie: que feraient-ils sans moi ?
+  Vers 20 à 22: s'agit-il du récit ou des pensées de la mouche ?
+  Quelle forme de discours rapportée est employé ?
+  Vers 21 à 23: relevez trois mots de la même famille.
+  Qu'imagine faire la mouche en imitant la femme ?
+  Quel mot indique un jugement de la part du narrateur ? A quel autre mot s'oppose-t-il, au vers suivant ?
+  Vers 26 à 28: comment ce monologue montre-t-il que la mouche s'attribue tout le mérite du franchissement de la pente ?
+
+  Dans la plus grande partie de ce deuxième mouvement, La Fontaine rapporte les pensées de la mouche au discours indirect libre.
+  Particulièrement sensible vers 20 à 22 où la mouche commente les actions des passagers.
+  Vers 26 à 29, on a un court passage au discours direct.
+  Vers 2à à 22, les point d'exclamation marque le dépit de la mouche qui croit agir toute seule.
+
+  Vers 21 à 23, trois mots de la famille de chant ("chanter", "chanter", "chanson"), qui donne l'impression d'une pensée qui tourne sur elle-même.
+  D'ailleurs la mouche finit par imiter la femme.
+  Cette pensée qui tourne au lieu d'avancer est aussi ... au vers 18 quand la mouche répète trois fois la même idée.
+  C'est à dire, "elle agit seule", "elle a tout le soin", "aucun n'aide aux chevaux à se tirer d'affaires".
+  ... accentue la chose (?)
+
+  "Sottises" exprime un jugement péjoratif de la prt du narrateur.
+  Ce mot s'oppose au travail accompli par les cheveaux et le conducteur.
+  les actions de la mouche nous donne l'impression d'une veine agitation.
+
+  "J"ai tant fait", "payez-moi de ma peine"
+  Non seulement la mouche veut être récompensée pour ce qu'elle croit avoir fait mais elle emploie le mot peine
+  en tant que synonyme avec le mot travail.
+
+4/ La morale
+  a) A qui La Fontaine s'en prend-il ?
+
+    Comme dans toute fables, La Fontaine traduit le comportement des animaux du récit à un comportement d'humains.
+    Il vise les importuns, ce sont des gens qui ennuyent par leurs omniprésences.
+    Importuns traduit en français moderne serait indésirables.
+    Importuns, à la fois synonyme de indésirables mais aussi de inutiles car il est opposé à nécessaire.
+
+  b) En quoi les mots de la rime "empressés/chassés" s'opposent-ils ?
+
+    Ils forment une antithèse, puisque les gens empressés croient être utiles alors que La Fontaine pense qu'il faut s'en débarraser.
+
+  c) A quel adjectif s'oppose le nom "nécessaires" ?
+
+    Il s'oppose à "inutiles".
+
+Conclusion:
+  En quoi Le coche et la mouche est-il une fable classique ?
+  En quoi est-elle différente des fables les plus célèbres ?
+
+  C'est une fable classique qui illustre une morale par un court récit qui met en scène des animaux.
+  Elle se distingue des fables des six premiers livres par une morale qui est une critique sociale et non un conseil.
+  Notamment à la cour du roi et dans les salons.

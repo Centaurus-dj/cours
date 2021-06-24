@@ -1,0 +1,98 @@
+Equation type cartésienne: ax + by + c = 0
+Vecteur directeur: (-b; a) Même direction que la droite
+Vecteur normal: (a; b) Direction orthogonale
+
+Pour définir si deux vecteurs sont collinéaires, on utilise le déterminant.
+
+det(u; v)= x*y' - x'*y où u et v sont des vecteurs.
+Si = 0, colinéarité entre u et v.
+
+Pour définir si deux vecteurs sont orthogonaux, on utilise .
+
+u . v= x*x' + y*y'
+Si = 0, orthogonalité entre u et v.
+
+AB = sqrt((x[b]-x[a])² + (y[b]-y[a])²)
+AB (x[b]-x[a]; y[b]-y[a])
+
+
+(x-a)² + (y-beta)² = r²
+
+mileu de [AB]: (x[a]+x[b] /2; y[a]+y[b] /2)
+
+
+Ex1:
+  1)
+    B e (d), donc:
+    7-3y-4 = 0
+    -3y+3 = 0
+    y = 1
+
+    Donc B a pour ordonnée 1.
+
+  2)
+    n(1; -3) est un vecteur normal de (d).
+
+  3)
+    delta perpendiculaire à (d) donc n(1; -3) est un vecteur directeur de delta.
+    Donc -b = 1 et a = -3
+        a = -3 et b = -1
+
+    Une équation cartésienne de delta est de la forme de -3x-y+c = 0
+    Or A(3; 1) e delta, donc:
+      -3*3-1+c=0
+      c = 10
+
+    Une équation cartésienne de delta est:
+      -3x-y+10 = 0
+
+  4)
+    H(x; y) est l'intersection entre delta et (d), donc:
+      {x-3y-4=0
+      {-3x-y+10=0
+
+      Multiplions la 1re ligne par 3:
+        {3x-9y-12=0
+        {-3x-y+10=0
+
+      Additionons les lignes entre elles:
+        {-10y-2=0
+        {-3x-y+10=0
+
+      {y= 2/-10 =  -0.2
+      {-3x-(-0.2)+10=0
+
+      {y= -0.2
+      {-3x+10.2 = 0
+
+      {y= -0.2
+      {x= -10.2/-3 = 3.4
+
+      Donc H a pour coordonnées: (3.4; -0.2)
+  5)
+    AH  = sqrt((3.4-3)² + (-0.2-1)²)
+        = sqrt(1.6)
+
+    La distance entre A et (d) est de sqrt(1.6).
+
+Exercice 2:
+  1)
+    Vérifions si la A(-1; 3) appartient aux droites données.
+
+    a)  2*(-1)-3+1=-4   X
+    b)  -1+2*3+1=6      X
+    c)  -(-1)+2*3-7=0   V
+    d)  -2*(-1)-3+1=0   V
+
+    c) u[3](-2; -1) est un vecteur directeur
+    d) u[4](1; -2) est un vecteur directeur
+
+    Puisque u et u[4] sont colinéaires, u[4] est un vecteur directeur de delta et donc:
+      réponse d.
+
+  2)
+    Equation du cercle:
+      (x-2)²+(y-4)²=3²
+
+    x²+4x+4+y²-8y+19=9
+    x²-4x+y²-8y+11=0

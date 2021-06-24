@@ -1,0 +1,45 @@
+There's two way to define the sequence:
+
+  - Explicit:
+
+    U{n} = n+2
+    U{n} = 2**n
+    |-> 2 to the (power) n
+
+  - Recurrent:
+
+    U{0} = -2
+    U{n+1} = 3u{n} (recurrent formula)
+    |-> It's a geometric sequence
+    -2, -6, -18, ...
+    3 --> common ratio
+    ratio = one term / previous one
+    |-> "raison" in french
+
+    U{0} = 2
+    U{n+1} = U{n}-3
+    |-> arithmetic sequence
+    2, -1, -4, -7, ...
+    +(-3) --> common difference
+    difference  = u{n+1} - u{n}
+                = -7 - (-4)
+                = -7 + 4
+                = -3
+
+    Define explicit formula:
+      a{n} = a{0} + d*n
+
+ QCM:
+  4.
+
+  5.
+    a{n+1} = a{n}-5
+  6.
+    a{n} = a{2} + (n-2)*(-5)
+
+Carl Friedrich gauss:
+
+  S = 1+2+3+...+100
+  S = 100+99+...+1
+  ----------------
+  2S = 101*100

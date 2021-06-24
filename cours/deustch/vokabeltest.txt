@@ -1,0 +1,13 @@
+vokabeltest:
+
+    la société: die Gesellschaft
+    mur de Berlin: die Berlinen Mauer
+    construction du mur: Mauerbau
+    chute du mur: Mauerfall
+    réunification: Wiedervereinigung
+    être séparé: getrennt sein
+    différence: Unterschiede 
+    préjugés: Vorurteile
+    deux Etats: zwei Staten
+    perdants: Vertierer
+    histoire: die Geschichte

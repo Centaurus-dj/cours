@@ -1,0 +1,44 @@
+Entrainement à l'analyse de documents:
+
+  Sur un texte: --> Ch.H2.1: Sujet d'essai sur l'analyse de documents
+    Titre Général: Les cinq libertés
+    À modifier:
+      Sujet:
+        Remplacer "en quoi elles remettent en cause.." par "en quoi elles constituent une critique du Second Empire"
+
+    Consignes de travail pour réaliser cette analyse:
+      1/ Analyse des termes du sujet
+        - revendications politiques de Thiers --> 1er
+        - une critique du Second Empire --> 2nd
+
+      2/ Prise de connaissance du document
+        Date: 11 janvier 1864 (2nd Empire, période libérale)
+        Auteur: Adolphe Thiers, député
+        Nature: Discours politique devant le Corps Législatif
+        Sujet: La revendication de plus de liberté
+
+      --> DANS (Date, Auteur, Nature, Sujet)
+      
+      3/ Lecture active
+        1er:
+          - Le droit à la sécurité du citoyen --> Ne pas être arrêté sans raison
+          - liberté de la presse --> permet à chaque citoyen de "veiller sur la chose publique", qui permet la liberté d'opinion
+          - liberté des élections --> droit de vote, de candidature, pas de favoritisme, etc...
+          - Liberté de la représentation nationale --> de discuter des lois et de critiquer le pouvoir
+          - Le peuple doit inspirer les décisions politiques --> la souvereineté nationale
+        2nd:
+          - "pas un vain bruit" --> les élus ne sont pas écoutés
+          - Dénonce la censure et l'autorisation préalable imposée aux journeaux pour paraître
+          - "les actes arbritraires du pouvoir" --> des arrestations d'opposants (ex: la représsion contre les républicains après le coup d'Etat)
+          - "qu'ils jouissent d'une liberté complète" --> les élus ne sont pas totalement libres de leurs paroles
+          - Critique du système des candidats officiels
+          - Manque de démocratie --> de nombreux députés ne sont pas élus mais nommés par Napoléon III
+          - Manque de pouvoir de l'assemblée élue qui ne peut pas proposer de loi et ne peut pas interpeller le gouvernement.
+      4/
+
+      Introduction:
+
+        Durant la première partie Second Empire en France, les libertés du peuple français ont étés restreintes.
+        Nous allons étudier un texte contenant la revendication de plus de liberté par le député Adolphe Thiers 
+        durant son discours politique devant le Corps Législatif écrit le 11 janvier 1864.
+        Quelles sont les revendications de Thiers et en quoi critiquent-elles le Second Empire ?

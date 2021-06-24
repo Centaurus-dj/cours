@@ -1,0 +1,276 @@
+ex 34 p120:
+
+  h(x)=x²-x-2
+  f'(0.5) = 0
+
+  Pour que la tengeante à C{h} soit parallèle à l'axe des abscisses, il faut que h'(x)=0
+
+  h'(x)=2x-1-0
+  h'(x)=2x-1
+  2x-1 = 0
+  x = 0.5
+  Donc la tengeante à C{h} en 0.5 est parallèle à l'axe des abscisses.
+
+  h(0.5) = 0.5²-0.5-2=-2.25
+  Cette tangeante passe par le point de coordonnées (0.5; -2.25)
+
+ex69 p125:
+  f(x) = x²-x-20
+  (d): y = 3x+1
+
+  Pour qu'une tangeante à C{f} soit parallèle à (d), il faut que f'(x) = 3.
+
+  f'(x)=2x-1
+  2x-1 = 3
+  x = 2
+  Donc la tangeante à C{f} en 2 est parallèle à (d).
+
+  f(2)=2²-2-20=-18
+  Cette tangeante passe par le point de coordonnées (2;-18)
+
+
+ex80 p126:
+
+  1.
+    a. f(x)=(2x+3)(1-4x)
+      U(x) = 2x+3   U'(x) = 2
+      V(x) = 1-4x   V'(x) = -4
+
+      f'(x) = U'(x)*V(x) + V'(x)*U(x)
+            = 2*(1-4x) + (-4*(2x+3))
+            = 2-8x-8x-12
+            = -16x-10
+
+    b. f(x) = 2x*1+2x*(-4x) + 3*1+3*(-4x)
+            = 2x-8x² + 3-12x
+            = -8x²-10x+3
+
+       f'(x) = -16x-10
+
+ex84 p126:
+
+  1.
+    f(x) = (5x-1) / x+2
+
+    U(x) = 5x-1     U'(x) = 5
+    V(x) = x+2      V'(x) = 1
+
+    f'(x) = U'(x)*V(x) - V'(x)*U(x) / (V(x))²
+          = (5*(x+2) - 1*(5x-1)) / (x+2)²
+          = (5x+10 - 5x+1) / (x+2)²
+          = 11 / (x+2)²
+
+
+
+Ex 48 p.?:
+
+  f'(x) = -4x(x²+1)-2x*(-4x) / (x²+1)²
+        = -4x²-4+8x² / (x²+1)²
+        = 4x²-4 /(x²+1)²
+
+  signe de 4x²-4:
+
+    delta = 0²-4*4*(-4) = 64
+    2 solutions pour 4x²-4=0
+    x{1} = -0+sqrt(64) / 2*4 = 1
+    x{2} = -0-sqrt(64) / 2*4 = -1
+
+
+  x;  -infini; -1; 1; +infini
+  signe de 4x²-4;   +; 0; -; 0; +
+  signe de (x2+1)²; +; 0; +; 0; +
+  signe de f';      +; 0; -; 0; +
+  variations de f;  /; 2; \; -2; /
+
+  f(-1) = -4*(-1) / (-1)²+1 = 4/2 = 2
+  f(1) = -4*1 / 1²+1 = -4/2 = -2
+
+
+
+
+
+Feuille d'exercices:
+
+  Ex 1:
+
+    f est croissante sur ]-inf; -0.5] puis décroissante sur [-0.5; 2.5] puis croissante sur [2.5; +inf[.
+    Donc f' est positive sur ]-inf; -0.5] puis négative sur [-0.5; 2.5] puis positive sur [2.5; +inf[.
+    Donc C{2} représente f'.
+
+  Ex 2:
+
+    f(x) = -2x²+90x-400, pour x e [15; 30]
+
+    1.
+      f'(x) = -2*2x+90-0
+            = -4x+90
+            -90 / -4  --> 90/4
+            x = 22.5
+
+      f(22.5) = 612.5
+
+      x; 15; 22.5; 30
+      variations de f'; +; 0; -
+      variations de f; /; 612.5; \
+
+      La production maximale est 22.5 pour une valeur de 612.5.
+
+  Ex 3:
+
+    Partie A:
+      1.
+        La courbe C{1} représente le chiffre d'affaires.
+
+      2.
+        Environ 450 000 €.
+      
+      3.
+        Il faut vendre environ 78 voitures par jour pour gagner 600 000 €
+
+      4.
+        Pour avoir un bénéfice il faut vendre [-inf; 39[ U ]83; +inf[
+    
+    Partie B:
+
+      1.
+        R(x) = -0.001x**3+0.07x²+3.36x-186
+
+        R'(x) = -0.001*3x²+0.07*2x+3.36-0
+              = 
+
+      2.
+      3.
+      4.
+        a)
+        b)
+
+
+
+Feuille d'exercices de révisions:
+
+  Ex1:
+
+    1. f(x) = 5x**3-3x²+x+4
+      Df = R
+      f'(x) = 5*3x²-3*2x+1+0
+            = 15x²-6x+1
+
+      delta = 6²-4*15
+            = 36-60
+            = -24
+      delta < 0, donc aucune solution
+
+      x; -inf; 1; +inf
+      signe de f';  /
+
+    2.  g(x) = 3-2x / 4x+1
+      4x+1 = 0
+      4x = -1
+      x = -1/4
+
+      Df = R \ {-1/4}
+
+      g'(x) = U'*V - V'*U / V²
+            = -2*(4x+1) - 4*(3-2x) / (4x+1)²
+            = -8x-2 - 12-8x / (4x+1)²
+            = -14 / (4x+1)²
+
+      -14 est négatif et (4x+1)² est positif quel que soit x.
+
+      x; -inf; -1/4; +inf
+      signe de f'; -; ||; -
+      var de f; \; ||; \
+
+    3. h(x) = (x-4)*sqrt(x)+2
+      Df = [0; +inf[
+
+      h'(x) = 1*sqrt(x)+ 1/(2sqrt(x))*(x-4)
+            = sqrt(x) + x-4 / 2sqrt(x)
+            = sqrt(x)*2sqrt(x)+x-4 / 2sqrt(x)
+            = 2x+x-4 / 2sqrt(x) = 3x-4 / 2sqrt(x)
+
+      3x-4 = 0
+      3x = 4
+      x = 4/3 (~= 1.333...)
+      2sqrt(x) étant positif, le signe ne dépend que de 3x-4.
+
+      x;            0;  4/3;  +inf
+      signe de f';  -;  0;    +
+      var de f;     \   ((18-1-sqrt(3))/9);   /
+
+      h(4/3) = 18-1-sqrt(3) / 9
+
+  Ex2:
+
+    1.
+      f'(0)= -2/1 = -2
+      f'(1)= 0
+      f'(2)= 2
+
+    2.
+      f(x) = x²-2x-1
+      f'(x) = 2x-2*1-0
+            = 2x-2
+
+      f'(0) = -2
+      f'(1) = 0
+      f'(2) = 2
+
+    3.
+      y = f'(a)(x - a)+f(a)
+      y = f'(0)(x-0)+f(0)
+        = -2x-1
+
+      y = f'(1)(x-1)+f(1)
+        = -2
+      
+      y = f'(2)(x-2)+(f2)
+        = 2(x-2)-1
+        = 2x-5
+
+    4.
+      x; -inf; 1; +inf
+      signe de f' -; 0; +
+
+  Ex3:
+    f(x)=-x²+4x-7 / x-1
+    1.
+      Df = ]-inf; 1[ U ]1; +inf[
+
+    2.  a = -2
+      y = f'(a)(x-a)+f(a)
+        = f'(-2)(x-(-2))+f(-2)
+
+      U = -x²+4x-7 
+      V = x-1
+      U'= -2x+4
+      V'= 1
+
+      f'(x) = ((-2x+4)(x-1))-(1*-x²+4x-7) / (x-1)²
+            = ((-2x²+2x+4x-4) + (x²-4x+7)) / (x-1)²
+            = (-2x²+6x-4+x²-4x+7) / (x-1)²
+            = -x²+2x+3 / (x-1)²
+
+      f(-2) = -(-2)²+4*(-2)-7 / -2-1
+            = -4-8-7 / -3
+            = -4-15 / -3
+            = -19 / -3
+            = 19 / 3 (???)
+
+      f'(-2)  = -(-2)²+2*(-2)+3 / (-2-1)²
+              = -4-4+3 / (-3)²
+              = -8+3 / 9
+              = -5 / 9
+
+      y = (-5/9)(x+2)+(19/3)
+        = -5/9x-10/9+19/3
+        = -5/9x-10/9+57/9
+        = -5/9+47/9
+    
+    3.
+      f'(x)=0
+      -x²+2x+3=0
+      -x²+2x=-3
+
+  Ex4:
+    

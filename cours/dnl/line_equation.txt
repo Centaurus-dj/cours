@@ -1,0 +1,61 @@
+u = vector
+
+explicit equation y = mx + p    = u(1;m)
+general equation: y = ax+by+c=0 = u(-b;a)
+
+p = y{a} - mx{a}
+m = (y{b}-y{a})/(x{b}- x{a}) = slope
+
+A (x{a}; y{a})
+B (x{b}; y{b})
+
+a vertical line --> x = a
+an horizontal line --> y = a
+This is a sort of equation but m is equal to 0.
+line equation for what?
+  - To calculate coordinates of some points on the line
+  - to draw the line
+
+
+Exercices:
+
+  1) m=2 A(3;1)
+    a)
+      y = 2x+p <=> p=y-2x       }
+           <=> p=1-2*3= -5  } y = 2x-5
+    b) u(1;2), v(2;4), w(10;20) --> these vectors are colinear
+
+  2) u(1;3) A(-2;4)
+
+    M e d <=> AM, u collinear
+    det(AM, u) = 0
+    A*(y-4) - 3(x+2)=0
+    -3x+y-10=0
+
+A transcendal number is a number which is not algebraic.
+An algebraic number is a number which is a solution of an equation with rational coefficients.
+
+Ex: 
+  C is algebraic because it is a solution of: x²-x-1=0
+  rational = a number which can be written as the ratio of two whole numbers.
+
+Ex:
+  343/246 = 1.1588
+EX:
+  The ratio of two adjacent numbers in the Fibonacci sequence is approximately phi.
+
+Ex:
+  1, 1, 2, 3, 5, 8, 13, 21, 34
+  x10/x9 ~= 1.618
+
+Ex:
+  We put 0 instead of t.
+  h(0)= -6*0² +100*0 + 26
+      = 26
+  h(0) is the height of the hill.
+
+Ex:
+  -6+²+100+26=0
+  delta = 10624
+  1st group negative (+1<0)
+  2nd positive (+2 ~= 16.92)
