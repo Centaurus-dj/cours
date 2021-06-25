@@ -18,8 +18,6 @@ Auto commit before push on remotes (Github, Gitlab)
 ### Execution
 print("Hello World from Python!")
 
-sys("git add .")
-sys(f"git commit {auto_commit_txt}")
 
 try:
     sys(f"git push {gitlab_link}")
@@ -35,7 +33,7 @@ except Exception as e:
 
 try:
     sys(f"git pull {gitlab_link}")
-    sys(f"git push {github_link}")
+    sys(f"git push {github_link} HEAD:main")
 except Exception as e:
     print(f"During pull then push, an error occurred:\n\t- {e}")
     exit()

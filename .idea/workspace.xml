@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36b600ea-c85a-404c-b201-d7f3b66c317c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev-tools/pushall.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev-tools/pushall.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev-tools/src/pushall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/import-cours.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/import-cours.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev-tools/src/pushall.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev-tools/src/pushall.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1uLEx6i22OKsT676w6T0Co7wpli" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
