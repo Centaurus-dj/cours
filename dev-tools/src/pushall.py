@@ -20,20 +20,12 @@ print("Hello World from Python!")
 
 
 try:
-    sys(f"git push {gitlab_link}")
-except Exception as e:
-    print(f"During push to Gitlab, an error occurred:\n\t- {e}")
-    exit()
-
-try:
+    sys("git stash && git checkout main")
+    sys(f"git pull {gitlab_link}")
+    sys(f"git push {gitlab_link} HEAD:main")
     sys("git checkout github-main")
-except Exception as e:
-    print(f"During checkout, an error occurred:\n\t- {e}")
-    exit()
-
-try:
     sys(f"git pull {gitlab_link}")
     sys(f"git push {github_link} HEAD:main")
 except Exception as e:
-    print(f"During pull then push, an error occurred:\n\t- {e}")
+    print(f"During execution, an error occurred:\n\t- {e}")
     exit()

@@ -4,6 +4,7 @@
     <list default="true" id="36b600ea-c85a-404c-b201-d7f3b66c317c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev-tools/src/pushall.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev-tools/src/pushall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/php/linux/run-tests.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/php/linux/run-tests.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -632,7 +632,7 @@ function main(): void
                     }
                     break;
                 case '--version':
-                    echo '$Id: 02484abfee0c680793a68dd2c12c2b24f06a81bd $' . "\n";
+                    echo '$Id$' . "\n";
                     exit(1);
 
                 default:
