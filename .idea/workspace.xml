@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd48bc3-7acd-4c36-9292-727adb6f3470" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/libs/php/linux/run-tests.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/php/linux/run-tests.php" afterDir="false" />
+    <list default="true" id="36b600ea-c85a-404c-b201-d7f3b66c317c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev-tools/pushall.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev-tools/pushall.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev-tools/src/pushall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/import-cours.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/import-cours.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,13 +17,57 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectId" id="1uLEx6i22OKsT676w6T0Co7wpli" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36b600ea-c85a-404c-b201-d7f3b66c317c" name="Default Changelist" comment="" />
+      <created>1624436721380</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624436721380</updated>
+      <workItem from="1624436732320" duration="1141000" />
+      <workItem from="1624568162286" duration="276000" />
+      <workItem from="1624568486001" duration="1985000" />
+      <workItem from="1624611462078" duration="6538000" />
+    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
